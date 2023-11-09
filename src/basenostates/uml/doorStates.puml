@@ -1,0 +1,108 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+
+class User {
+- name : String
+- credential : String
++ User(name: String, credential: String)
++ toString() : String
+}
+
+class Main {
++ {static} main(args : String)
+}
+class Webserver {
+- {static} PORT :int
+- {static} FORMATTER : DateTimeFormatter
++ Webserver()
+}
+
+class SocketThread {
+- insocked : Socked
+- makeRequest(tokens : String[]) : Request
+- makeRequestReader(tokens : String[]) : RequestReader
+- makeRequestArea(tokens : String[]) : RequestArea
+- makeHeaderAnswer() : String
+- makeJsonAnswer(request : Request) : String
++ run()
+}
+
+Webserver +-right- SocketThread
+
+note right of SocketThread
+inner class
+of Webserver
+end note
+
+class DirectoryDoors {
+- {static} allDoors : Door[]
++ {static} makeDoors()
++ {static} findDoorById(id : String) : Door
++ {static} getAllDoors() : Door[]
+}
+
+DirectoryDoors --> "*" Door : "allDoors"
+
+class DirectoryUsers {
+- {static} users : User[]
++ {static} makeUsers()
++ {static} findUserByCredential(credential : String) : User
+}
+
+DirectoryUsers --> "*" User : "users"
+
+class Door {
+- id : String
+- closed : boolean
+- state : DoorState
++ Door(id : String)
++ processRequest(request : RequestReader)
++ setState(doorState : DoorState)
++ toJson() : JSONObject
+'+ toString() : String
+'+ isClosed() :boolean
+'+ setClosed(b : boolean)
+'+ getStateName() : String
++ setState(ds: DoorState)
+- doAction(action : String)
+
+}
+
+abstract class DoorState{
+# name : String
++ {abstract} getName()
++ {abstract} open()
++ {abstract} close()
++ {abstract} lock()
++ {abstract} unlock()
+}
+
+class Locked extends DoorState{
++ getName()
++ open()
++ close()
++ lock()
++ unlock()
+}
+
+class Unlocked extends DoorState{
++ getName()
++ open()
++ close()
++ lock()
++ unlock()
+}
+
+note right of Main::main
+DirectoryDoors.makeDoors()
+DiretoryUsers.makeUsers()
+new Webserver()
+end note
+
+Main -[hidden]down- Webserver
+Webserver -[hidden]down- DirectoryDoors
+DirectoryDoors -[hidden]right- DirectoryUsers
+Door --> "1" DoorState : state
+DoorState --> "1" Door : door
+@enduml
