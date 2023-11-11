@@ -26,6 +26,11 @@
     <logger name="basenostates.DoorState" level="debug"/>
     <logger name="basenostates.UserGroup" level="debug"/>
     <logger name="basenostates.DirectoryUserGroups" level="debug"/>
+    <logger name="basenostates.Locked" level="debug"/>
+    <logger name="basenostates.WebServer" level="debug"/>
+    <logger name="basenostates.Space" level="debug"/>
+    <logger name="basenostates.DirectoryAreas" level="debug"/>
+    <logger name="basenostates.Actions" level="debug"/>
     <!---->
 
     <!--Second Landmark classes-->
