@@ -4,10 +4,12 @@ import java.util.Observer;
 import java.time.LocalDateTime;
 import java.time.Duration;
 public class UnlockedShortly extends DoorState implements Observer{
-  /*DoorState type where a User can do all actions except itself.
+  /*DoorState type where a User can do all actions except itself (depending on the privileges).
   * Furthermore, this state only can have a duration of 10 seconds. After unlock shortly a door for ten seconds,
-  * if it is still opened it must change of state to Propped. If it is close to Lock.
-  * We know it as UnlockedShortly is an Observer of Clock (Observable). This one notifies every ten seconds the
+  * if it is still opened it must change of state to Propped. If it is closed, or it is closed before the 10 seconds
+  * the State changes to Lock.
+  *
+  * We know UnlockedShortly is an Observer of Clock (Observable). This one notifies every ten seconds the
   * DoorsState*/
 
   private final LocalDateTime dateBeforeObserving;

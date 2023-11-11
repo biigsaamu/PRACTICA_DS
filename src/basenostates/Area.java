@@ -6,10 +6,10 @@ public abstract class Area {
   /*This abstract class is declared to implement the design pattern COMPOSITE.
   This means that the methods declared in the class are the ones that share and must
   be implemented by the heritage classes.
-  This design pattern compose objects, simple (Space) and composite (Partition),
+  This design pattern composes objects, simple (Space) and composite (Partition),
   as tree structures and allows working with them. */
-  protected String id;
 
+  protected String id;
   protected String description;
   protected Partition father;
 

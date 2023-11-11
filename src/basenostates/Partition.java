@@ -5,8 +5,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class Partition extends Area{
-/*Class composite (complex object), that heritages Area methods.
-Must be compound (have children) by a Partition/s, Space/s or Partitions and Areas*/
+/*Class that belongs tho COMPOSITE pattern. It is the complex object that heritages and implements Area's abstract methods.
+Must be compound (have children/s) by other Partition/s and/or Space/s.
+*/
   private final ArrayList<Area> areas = new ArrayList<>();
 
   public Partition(String id, String description, Partition father){
@@ -19,7 +20,7 @@ Must be compound (have children) by a Partition/s, Space/s or Partitions and Are
     areas.add(area);
   }
 
-  public ArrayList<Area> getAreas(){return areas;}
+  //public ArrayList<Area> getAreas(){return areas;}
 
   @Override
   public String getId(){return id;}
@@ -88,6 +89,7 @@ Must be compound (have children) by a Partition/s, Space/s or Partitions and Are
         //+ ", belongs to Partition=" + father
         + "}";
   }
+
 
   public JSONObject toJson() {
     JSONObject json = new JSONObject();

@@ -12,18 +12,20 @@ public class UserGroup {
 * - Allowed areas to enter
 * - Allowed actions to do
 * - Work Schedule
+*
+* UserGroups are declared at DirectoryUserGroups and each one of them have their own characteristics.
 * */
-  private String name;
-  private ArrayList<User> users;
+  private final String name;
+  private final ArrayList<User> users;
   //A userGroup can be composed by more than one user
 
-  private ArrayList<Area> userGroupAreas;
+  private final ArrayList<Area> userGroupAreas;
   /*A userGroup can have access to a specific number of areas represented by this attribute*/
 
   private ArrayList<String> actions = new ArrayList<>();
   //String list with the actions that the UserGroup is allowed to do
 
-  private Schedule schedule;
+  private final Schedule schedule;
 
   public UserGroup(String name, ArrayList<User> users, ArrayList<Area> userGroupAreas, ArrayList<String> actions, Schedule schedule){
     this.name = name;
@@ -44,6 +46,11 @@ public class UserGroup {
 
   }
 
+  public ArrayList<User> getUsers() {
+    return users;
+  }
+
+/*
   public String getName(){return name;}
   public void setUserGroupArea(Area area) {
     //Adds a new area to the userGroupAreas list
@@ -67,10 +74,9 @@ public class UserGroup {
     users.add(user);
   }
 
-  public ArrayList<User> getUsers() {
-    return users;
-  }
   public ArrayList<String> getActions(){return actions;}
+  */
+
 
   public ArrayList<Space> getSpaces(){
     /*Calls getSpaces() of the Areas associated to this UserGroup. Applying recursion and returning the list of

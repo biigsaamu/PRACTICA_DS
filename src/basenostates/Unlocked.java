@@ -1,10 +1,11 @@
 package basenostates;
 
 public class Unlocked extends DoorState {
-  /*DoorState type where a User can do actions:
+  /*Unlocked is a DoorState type where a User can do the following actions (depending on the privileges):
   * - Open
   * - Close
   * - Lock
+  * A State can change of State by itself.
   * */
   private final String name;
 
