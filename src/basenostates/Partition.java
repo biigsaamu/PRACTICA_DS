@@ -1,13 +1,16 @@
 package basenostates;
 
 import org.json.JSONObject;
-
 import java.util.ArrayList;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Partition extends Area{
 /*Class that belongs tho COMPOSITE pattern. It is the complex object that heritages and implements Area's abstract methods.
 Must be compound (have children/s) by other Partition/s and/or Space/s.
 */
+
+  Logger logger = LoggerFactory.getLogger("basenostates.Area.Partition");
   private final ArrayList<Area> areas = new ArrayList<>();
 
   public Partition(String id, String description, Partition father){
@@ -16,7 +19,6 @@ Must be compound (have children/s) by other Partition/s and/or Space/s.
   }
 
   public void addArea(Area area){
-    //Error: "Consulting data..."
     areas.add(area);
   }
 
@@ -33,36 +35,36 @@ Must be compound (have children/s) by other Partition/s and/or Space/s.
       doors.addAll(area.getDoorsGivingAccess());
     }
     if (doors.isEmpty()){ //If doors list is empty the function returns null
-      System.out.println("No Doors giving access to " + id);
+      logger.warn("No Doors giving access to " + id);
       return null;
     }else { //If doors list is not empty the function returns the doors that gives access to this Partition
-      System.out.println("Doors " + doors + " giving access to Partition " + id);
+      logger.info("Doors " + doors + " giving access to Partition " + id);
       return doors;
     }
 
   }
 
   public Area findAreaById(String id) { //Searches an area by the id passed as a parameter
+    logger.debug("Is area " + id + ", " + this.id + "?");
     if (this.id.equals(id)) {
-      //System.out.println("[findAreaById Partition class]. Is area " + id + " " + this.id + "?"); C
       /*Is the Area we are searching by id the current Area?*/
-      System.out.println("[findAreaById Partition class]. Yes it is!");
+      logger.debug("Yes it is! :)");
       return this;
     } else {
-      System.out.println("[findAreaById Partition class]. Is area " + id + " among " + this.id + " areas?");
+      logger.debug("Is area " + id + " among " + this.id + " areas?");
       /*Check if the Partition children's (subAreas) one of them is the Area searched by the id*/
       for (Area area : this.areas) {
         Area subArea = area.findAreaById(id);
         if (subArea != null) {
           //Search succeed. Children's id is the same as the searched area
-          System.out.println("[findAreaById Partition class]. Area " + id + " is " + subArea.id);
+          logger.debug("Area " + id + " is " + subArea.id);
           return subArea;
         } else {
           //Search did not succeed
-          System.out.println("[findAreaById Partition class]. Area " + id + " is not " + area.id);
+          logger.debug("Area " + id + " is not " + area.id);
         }
       }
-      System.out.println("[findAreaById Partition class]. Area " + id + " is not in " + this.id);
+      logger.debug("Area " + id + " is not in " + this.id);
       return null;
     }
   }
@@ -74,10 +76,10 @@ Must be compound (have children/s) by other Partition/s and/or Space/s.
         of Partition or Space respectively (applies recursion)*/
       }
     if (partitionSpaces.isEmpty()){ //If partitionSpaces is empty the method returns null as it means the partition has no children
-      //System.out.println("No Spaces to return"); C
+      logger.warn("Area " + this.id + " has no Spaces to return");
       return null;
     }else{ //If the partitionSpaces list is not empty the method returns the list of Spaces that the Partition has
-      //System.out.println("Partition " + id + " has " + partitionSpaces + " Spaces"); C
+      logger.debug("Partition " + id + " has " + partitionSpaces + " Spaces");
       return partitionSpaces;
     }
   }

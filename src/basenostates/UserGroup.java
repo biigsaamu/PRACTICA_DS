@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.time.LocalDateTime;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class UserGroup {
 /*Class that represents a UserGroup with:
@@ -15,6 +17,8 @@ public class UserGroup {
 *
 * UserGroups are declared at DirectoryUserGroups and each one of them have their own characteristics.
 * */
+
+  Logger logger = LoggerFactory.getLogger("basenostates.UserGroup");
   private final String name;
   private final ArrayList<User> users;
   //A userGroup can be composed by more than one user
@@ -36,6 +40,7 @@ public class UserGroup {
       Because when they (Users) are initialized in makeUserGroups() the attribute UserGroup is null*/
       for (User user : this.users){
         user.setUserGroup(this);
+        logger.debug("User " + user + " added to " + this.name + " UserGroup");
       }
     }
     this.userGroupAreas = userGroupAreas;
@@ -43,7 +48,7 @@ public class UserGroup {
     this.schedule = schedule;
     //Assigns this UserGroup to the Schedule
     this.schedule.setUserGroup(this);
-
+    logger.debug("Schedule fixed to " + this.name + " UserGroup");
   }
 
   public ArrayList<User> getUsers() {

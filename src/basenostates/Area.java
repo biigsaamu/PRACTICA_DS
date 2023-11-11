@@ -1,6 +1,9 @@
 package basenostates;
 
 import java.util.ArrayList;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 public abstract class Area {
   /*This abstract class is declared to implement the design pattern COMPOSITE.
@@ -8,6 +11,10 @@ public abstract class Area {
   be implemented by the heritage classes.
   This design pattern composes objects, simple (Space) and composite (Partition),
   as tree structures and allows working with them. */
+
+  //Logger
+  //Logger logger = LoggerFactory.getLogger(Area.class);
+  Logger logger = LoggerFactory.getLogger("basenostates.Area");
 
   protected String id;
   protected String description;
@@ -19,6 +26,7 @@ public abstract class Area {
     if (father != null) {
       father.addArea(this); //Tree construction assigning child (this area) to the father (Partition)
       this.father = father;
+      logger.debug(this.id + " has " + this.father.getId() + " as father;");
     } else {
       this.father = null;
     }

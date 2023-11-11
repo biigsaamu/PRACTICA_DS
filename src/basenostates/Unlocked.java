@@ -1,5 +1,8 @@
 package basenostates;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Unlocked extends DoorState {
   /*Unlocked is a DoorState type where a User can do the following actions (depending on the privileges):
   * - Open
@@ -7,6 +10,8 @@ public class Unlocked extends DoorState {
   * - Lock
   * A State can change of State by itself.
   * */
+
+  Logger logger = LoggerFactory.getLogger("basenostates.DoorState.Unlocked");
   private final String name;
 
   public Unlocked(Door door) {
@@ -23,9 +28,9 @@ public class Unlocked extends DoorState {
     if (door.isClosed()) {
       door.setClosed(false);
       //System.out.println(door.getStateName()); //Shows the door state
-      System.out.println("Door " + door.getId() + " successfully opened");
+      logger.debug("Door " + door.getId() + " successfully opened");
     } else {
-      System.out.println("Door " + door.getId() + " already opened");
+      logger.warn("Door " + door.getId() + " already opened");
     }
   }
 
@@ -33,9 +38,9 @@ public class Unlocked extends DoorState {
     //User closes a door and sets boolean attribute closed to false *
     if (!door.isClosed()) {
       door.setClosed(true);
-      System.out.println("Door " + door.getId() + " successfully closed");
+      logger.debug("Door " + door.getId() + " successfully closed");
     } else {
-      System.out.println("Door " + door.getId() + " already closed");
+      logger.debug("Door " + door.getId() + " already closed");
     }
   }
 
@@ -44,19 +49,19 @@ public class Unlocked extends DoorState {
       //User tries to lock a closed door */
       door.setState(new Locked(door));
       //System.out.println(door.getStateName());
-      System.out.println("Door " + door.getId() + " successfully locked");
+      logger.debug("Door " + door.getId() + " successfully locked");
     } else { //User tries to lock an opened door *
-      System.out.println("Door " + door.getId() + " is opened. Close first to lock it");
+      logger.debug("Door " + door.getId() + " is opened. Close first to lock it");
     }
   }
 
   public void unlock() {
     //Can not unlock a door that is already unlocked
-    System.out.println("Door " + door.getId() + " is already unlocked");
+    logger.debug("Door " + door.getId() + " is already unlocked");
   }
 
   public void unlock_shortly() {
-    System.out.println("Door " + door.getId() + " already unlocked. Lock first to UnlockShortly");
+    logger.debug("Door " + door.getId() + " already unlocked. Lock first to UnlockShortly");
   }
 
 }

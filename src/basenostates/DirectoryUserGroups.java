@@ -5,12 +5,15 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DirectoryUserGroups {
   /*
   * Class that creates and save the different UserGroups that exist in the system*/
+
+  static Logger logger = LoggerFactory.getLogger("basenostates.DirectoryUserGroups");
   private static final ArrayList<UserGroup> userGroups = new ArrayList<>();
 
   public static void makeUserGroups() {
@@ -18,34 +21,20 @@ public class DirectoryUserGroups {
     // now all are the same
 
 
-    //Check all areas are initialized
-    System.out.println("Is building in DirectoryAreas?");
+    //Check areas needed to assign to UserGroups are initialized
+    logger.debug("Is building in DirectoryAreas?");
     Area building = DirectoryAreas.findAreaById("building");
-    /*
-    System.out.println("Is basement in DirectoryAreas?");
-    Area basement = DirectoryAreas.findAreaById("basement");
-    System.out.println("Is parking in DirectoryAreas?");
-    Area parking = DirectoryAreas.findAreaById("parking");
-     */
-    System.out.println("Is ground_floor in DirectoryAreas?");
+
+    logger.debug("Is ground_floor in DirectoryAreas?");
     Area ground_floor = DirectoryAreas.findAreaById("ground_floor");
-    //System.out.println("Is hall in DirectoryAreas?");
-    //Area hall = DirectoryAreas.findAreaById("hall");
-    //System.out.println("Is room1 in DirectoryAreas?");
-    //Area room1 = DirectoryAreas.findAreaById("room1");
-    //System.out.println("Is room2 in DirectoryAreas?");
-    //Area room2 = DirectoryAreas.findAreaById("room2");
-    System.out.println("Is floor1 in DirectoryAreas?");
+
+    logger.debug("Is floor1 in DirectoryAreas?");
     Area floor1 = DirectoryAreas.findAreaById("floor1");
-    //System.out.println("Is room3 in DirectoryAreas?");
-    //Area room3 = DirectoryAreas.findAreaById("room3");
-    //System.out.println("Is corridor in DirectoryAreas?");
-    //Area corridor = DirectoryAreas.findAreaById("corridor");
-    //System.out.println("Is IT in DirectoryAreas?");
-    //Area IT = DirectoryAreas.findAreaById("IT");
-    System.out.println("Is exterior in DirectoryAreas?");
+
+    logger.debug("Is exterior in DirectoryAreas?");
     Area exterior = DirectoryAreas.findAreaById("exterior");
-    System.out.println("Is stairs in DirectoryAreas?");
+
+    logger.debug("Is stairs in DirectoryAreas?");
     Area stairs = DirectoryAreas.findAreaById("stairs");
 
     //Create userGroupAreas
@@ -140,19 +129,19 @@ public class DirectoryUserGroups {
   public static User findUserByCredential(String credential) {
     /*process() method of RequestReader class calls this method expecting to match the credential passed by parameter
     with some user's credential. So the User returned exists in the database of the ACU*/
-    for (UserGroup ug : userGroups) {
+    for (UserGroup userGroup : userGroups) {
       /*Scroll through the UserGroups list to have access to Users that belong to a specific UserGroup (ug)*/
-      ArrayList<User> users = ug.getUsers(); //Returns the Users list in a UserGroup
-      for (User u : users){
+      ArrayList<User> users = userGroup.getUsers(); //Returns the Users list in a UserGroup
+      for (User user : users){
         /*Scroll through the Users of a UserGroup the search if one User (u) of them has the credential passed
         by parameter.*/
-        if (u.getCredential().equals(credential)) { /*If it is the case the method returns true. If not a null*/
-          System.out.println("user with credential " + credential + " found");
-          return u;
+        if (user.getCredential().equals(credential)) { /*If it is the case the method returns true. If not a null*/
+          logger.debug("user with credential " + credential + " found");
+          return user;
         }
       }
     }
-    System.out.println("user with credential " + credential + " not found");
+    logger.warn("user with credential " + credential + " not found");
     return null; // otherwise we get a Java error
   }
 }

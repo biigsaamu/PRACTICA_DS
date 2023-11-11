@@ -31,7 +31,7 @@ public class Space extends Area {
   public Area findAreaById(String id){
     /*Compares the id searched with the id of the Space.
     So if it is equals this Space is the one that was being found and the method returns this.id*/
-    //System.out.println("[findAreaById Space class]. Is area " + id + " " + this.id + "?"); C
+    System.out.println("[findAreaById Space class]. Is area " + id + ", " + this.id + "?");
     if (this.id.equals(id)){
       System.out.println("[findAreaById Space class]. Yes it is!");
       return this;
