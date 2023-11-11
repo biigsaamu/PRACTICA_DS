@@ -1,0 +1,198 @@
+21:29:58.505 [main] DEBUG basenostates.Area -
+                basement has building as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                parking has basement as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                ground_floor has building as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                hall has ground_floor as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                room1 has ground_floor as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                room2 has ground_floor as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                floor1 has building as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                room3 has floor1 as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                corridor has floor1 as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                IT has floor1 as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                exterior has building as father;
+21:29:58.505 [main] DEBUG basenostates.Area -
+                stairs has building as father;
+21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
+                Is building in DirectoryAreas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area building building?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Yes it is! :)
+21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
+                Is ground_floor in DirectoryAreas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area ground_floor building?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area ground_floor among building areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area ground_floor basement?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area ground_floor among basement areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area ground_floor is not parking
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area ground_floor is not in basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area ground_floor is not basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area ground_floor ground_floor?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Yes it is! :)
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area ground_floor is ground_floor
+21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
+                Is floor1 in DirectoryAreas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area floor1 building?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area floor1 among building areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area floor1 basement?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area floor1 among basement areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not parking
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not in basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area floor1 ground_floor?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area floor1 among ground_floor areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not hall
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not room1
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not room2
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not in ground_floor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is not ground_floor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area floor1 floor1?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Yes it is! :)
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area floor1 is floor1
+21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
+                Is exterior in DirectoryAreas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior building?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior among building areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior basement?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior among basement areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not parking
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not in basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior ground_floor?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior among ground_floor areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not hall
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not room1
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not room2
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not in ground_floor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not ground_floor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior floor1?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area exterior among floor1 areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not room3
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not corridor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not IT
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not in floor1
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is not floor1
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area exterior is exterior
+21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
+                Is stairs in DirectoryAreas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs building?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs among building areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs basement?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs among basement areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not parking
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not in basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not basement
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs ground_floor?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs among ground_floor areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not hall
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not room1
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not room2
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not in ground_floor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not ground_floor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs floor1?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Is area stairs among floor1 areas?
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not room3
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not corridor
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not IT
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not in floor1
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not floor1
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is not exterior
+21:29:58.505 [main] DEBUG basenostates.Area.Partition -
+                Area stairs is stairs
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                User User{name=Ernest, credential=74984} added to employees UserGroup
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                User User{name=Eulalia, credential=43295} added to employees UserGroup
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                Schedule fixed to employees UserGroup
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                User User{name=Manel, credential=95783} added to manegers UserGroup
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                User User{name=Marta, credential=05827} added to manegers UserGroup
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                Schedule fixed to manegers UserGroup
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                User User{name=Ana, credential=11343} added to admin UserGroup
+21:29:58.516 [main] DEBUG basenostates.UserGroup -
+                Schedule fixed to admin UserGroup
