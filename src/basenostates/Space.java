@@ -5,6 +5,12 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+We use Composite design pattern, the Space
+is a child class of the Area class as it
+inherits methods from the parent class and
+allows working with objects and objects compositions
+ */
 
 public class Space extends Area {
   /*Class leaf (simple object), that heritages Area methods.

@@ -3,6 +3,13 @@ package basenostates;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+This class uses the State design pattern, allowing an object
+to alter its behaviour when its internal state changes.
+Its adds behaviours such as Locked and Unlocked in a state
+subclass.
+ */
+
 public abstract class DoorState {
   /*This abstract class is declared to implement de design pattern STATE.
   * */

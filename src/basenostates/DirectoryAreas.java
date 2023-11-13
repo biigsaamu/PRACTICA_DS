@@ -6,6 +6,14 @@ import java.util.Arrays;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+We use Singleton in this class, we have static methods such
+as rootArea and allDoors, their static variables maintain a single,
+global state that is accessible through static methods.
+We also use Composite because we treat partition and spaces in
+this class
+ */
+
 public class DirectoryAreas {
 
   static Logger logger = LoggerFactory.getLogger("basenostates.DirectoryAreas");

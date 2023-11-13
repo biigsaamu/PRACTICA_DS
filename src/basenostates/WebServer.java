@@ -20,6 +20,16 @@ import org.slf4j.LoggerFactory;
 // Based on
 // https://www.ssaurel.com/blog/create-a-simple-http-web-server-in-java
 // http://www.jcgonzalez.com/java-socket-mini-server-http-example
+
+/*
+In this clas we use the Command design patterns, we encapsulate
+a request for some operation under a method such as the process
+method where the corresponding operation is executed.
+We also use Factory Method which encapsulates the creation logic
+of several objects as Request, RequestRefresh, etc... to facilitate
+the code extension.
+ */
+
 public class WebServer {
 
   Logger logger = LoggerFactory.getLogger("basenostates.WebServer");

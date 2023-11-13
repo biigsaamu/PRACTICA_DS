@@ -3,6 +3,12 @@ package basenostates;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+The Locked class uses the State design pattern
+because it allows an object to alter its behaviour when
+its internal state changes.
+*/
+
 public class Locked extends DoorState {
   /*DoorState type where a User can do actions:
    * - Unlock
