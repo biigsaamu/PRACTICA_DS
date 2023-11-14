@@ -4,23 +4,28 @@ import java.time.LocalDate;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+/* this class can be a record, that by definition is a class only used for representing data */
 public class Schedule {
+
+  Logger logger = LoggerFactory.getLogger("basenostates.Schedule");
   private UserGroup userGroup;
-  private LocalDate dataInici;
-  private LocalDate dataFi;
-  private ArrayList<DayOfWeek> workDays;
+  private final LocalDate initialDate;
+  private final LocalDate endDate;
+  private final ArrayList<DayOfWeek> workDays;
+  private final LocalTime initialHour;
+  private final LocalTime endHour;
 
-  private LocalTime horaInici;
-  private LocalTime horaFi;
-
-  public Schedule(LocalDate dataInici, LocalDate dataFi, ArrayList<DayOfWeek> workDays, LocalTime horaInici, LocalTime horaFi){
-    this.dataInici = dataInici;
-    this.dataFi = dataFi;
+  public Schedule(LocalDate initialDate, LocalDate endDate, ArrayList<DayOfWeek> workDays, LocalTime initialHour, LocalTime endHour) {
+    this.initialDate = initialDate;
+    this.endDate = endDate;
     this.workDays = workDays;
-    this.horaInici = horaInici;
-    this.horaFi = horaFi;
+    this.initialHour = initialHour;
+    this.endHour = endHour;
     userGroup = null;
+    logger.warn("Schedule has null userGroup for now");
   }
 
   public UserGroup getUserGroup() {
@@ -29,22 +34,28 @@ public class Schedule {
 
   public void setUserGroup(UserGroup userGroup) {
     this.userGroup = userGroup;
+    logger.info("Schedule is assigned to " + userGroup.getName() + " userGroup");
   }
 
-  public LocalDate getDataInici() {
-    return dataInici;
+  public LocalDate getInitialDate() {
+    return initialDate;
   }
-  public LocalDate getDataFi() {
-    return dataFi;
+
+  public LocalDate getEndDate() {
+    return endDate;
   }
+
   public ArrayList<DayOfWeek> getWorkDays() {
     return workDays;
   }
-  public LocalTime getHoraInici() {
-    return horaInici;
+
+  public LocalTime getInitialHour() {
+    return initialHour;
   }
-  public LocalTime getHoraFi() {
-    return horaFi;
+
+  public LocalTime getEndHour() {
+    return endHour;
   }
 
 }
+
