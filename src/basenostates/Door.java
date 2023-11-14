@@ -2,34 +2,37 @@ package basenostates;
 
 import basenostates.requests.RequestReader;
 import org.json.JSONObject;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Door {
+  // Basic unit of the system which Users interact to.
+
+  Logger logger = LoggerFactory.getLogger("basenostates.Door");
   private final String id;
   private boolean closed; // physically
-  private DoorState ds; //Reference the state of the door (locked or unlocked)
-  private final Space origen;
-  private final Space destination;
+  private DoorState ds; // Reference the state of the door
+  private final Space fromSpace;
+  private final Space toSpace;
 
-  public Door(String id, Space origen, Space destination) { //Ask if the constructor should receive more parameters
+  public Door(String id, Space fromSpace, Space toSpace) {
     this.id = id;
     closed = true;
     ds = new Unlocked(this);
-    this.origen = origen;
-    this.destination = destination;
-   // this.origen.setDoorsGivingAccess(this); //Add this door to Door's list that gives access to the origen Space
-    this.destination.addDoorGivingAccess(this); //Add this door to Door's list that gives access to the destination Space
-    //System.out.println("Door " + this.id + " connects From space '" + this.origen.id + "' to space '" + this.destination.id + "'"); C
+    this.fromSpace = fromSpace;
+    this.toSpace = toSpace;
+    this.toSpace.addDoorGivingAccess(this); // Add this door to Door's list that gives access to the toSpace Space
   }
 
   public void processRequest(RequestReader request) {
     // it is the Door that process the request because the door has and knows
     // its state, and if closed or open
+    String action = request.getAction();
     if (request.isAuthorized()) {
-      String action = request.getAction();
       doAction(action);
     } else {
-      System.out.println("not authorized");
+      //System.out.println("not authorized");
+      logger.info("not authorized to do the " + action + " action to Door " + id);
     }
     request.setDoorStateName(getStateName());
   }
@@ -43,34 +46,33 @@ public class Door {
         ds.close();
         break;
       case Actions.LOCK:
-        // TODO
-        /* If it is closed and wants to be locked, go!. If it is opened, before locking it it must be closed.*/
-        // fall through
+        /* If it is closed and wants to be locked, to!. If it is opened, before locking it it must be closed. */
         ds.lock();
         break;
       case Actions.UNLOCK:
-        // TODO
         // fall through
         ds.unlock();
         break;
       case Actions.UNLOCK_SHORTLY:
-        // TODO
         ds.unlock_shortly();
         //System.out.println("Action " + action + " not implemented yet");
         break;
       default:
         assert false : "Unknown action " + action;
+        logger.error("Unknown action " + action + " to the Door");
         System.exit(-1);
     }
   }
 
-  public Space getToSpace(){ //Returns the space where you land after crossing the door
-    return destination;
+  public Space getToSpace() {
+    return toSpace;
   }
 
-  public Space getFromSpace(){ //Returns the space where you start before crossing the door
-    return origen;
+  public Space getFromSpace() {
+    return fromSpace;
+
   }
+
   public boolean isClosed() {
     return closed;
   }
@@ -83,10 +85,11 @@ public class Door {
     return ds.getName();
   }
 
-  public void setClosed(boolean b){
+  public void setClosed(boolean b) {
     closed = b;
   }
-  public void setState(DoorState doorState){ //Sets the door state to the string passed //Class 'DoorState' is exposed outside its defined visibility scope
+
+  public void setState(DoorState doorState){
     ds = doorState;
   }
 
