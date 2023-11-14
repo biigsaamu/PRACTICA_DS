@@ -4,16 +4,18 @@ import java.time.LocalDateTime;
 import java.util.Observable;
 import java.util.Timer;
 import java.util.TimerTask;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Clock extends Observable {
-  /*Singleton pattern applied. The class has only a uniqueClock (static) with a private constructor.
-  Furthermore has a lazy initialization with public method getInstance(). So we can declare a Clock wherever other class we want
-  In this case it is located in UnlockedShortly*/
+  /* Singleton pattern applied. The class has only a unique instance with a private constructor (uniqueClock).
+   * Furthermore has a lazy initialization with public method getInstance(). So we can declare a Clock  wherever
+   * other class we want. In this case it is located in UnlockedShortly */
+
+  static Logger clockLogger = LoggerFactory.getLogger("basenostates.Clock");
   public static final int CLOCK_PERIOD = 1;
   private Timer timer;
   private int period;
-
   private static Clock uniqueClock = null;
 
   // Constructor
@@ -24,23 +26,24 @@ public class Clock extends Observable {
       public void run() { //Starts running the timer
         LocalDateTime date = LocalDateTime.now();
         setChanged(); //Compulsory if we want the observers be notified
-        if (countObservers() > 0){ //If there are observers notify them. If not, no.
-          notifyObservers(date); //calls all the observers update
-          System.out.println("run() executed at " + date);
+        if (countObservers() > 0) {
+          notifyObservers(date);
+          //System.out.println("run() executed at " + date);
+          clockLogger.debug("Clock executed at" + date);
         }
       }
     };
-    //Repeats a task each period times. In this case every second, So observers are notified avery second
+    //Repeats a task each period times. In this case every second, So observers are notified by every second
     timer.scheduleAtFixedRate(repeatedTask, 0, 1000 * period);
   }
 
-  public static Clock getInstance(){
-    if (uniqueClock == null){ //lazy initialization
+  public static Clock getInstance() {
+    if (uniqueClock == null) { //lazy initialization
       uniqueClock = new Clock();
+      clockLogger.info("uniqueCLock created");
     }
     return uniqueClock;
   }
-
 
   public void stop() {
     timer.cancel();
