@@ -55,8 +55,11 @@ public class UserGroup {
     return users;
   }
 
+  public String getName() {
+    return name;
+  }
+
 /*
-  public String getName(){return name;}
   public void setUserGroupArea(Area area) {
     //Adds a new area to the userGroupAreas list
     userGroupAreas.add(area);
@@ -109,11 +112,11 @@ public class UserGroup {
     /*This method verifies that the dateTime (now) passed by parameter is within the working time of a UserGroup*/
 
     //Get information of User UserGroup Schedule
-    LocalDate dataInici = schedule.getDataInici();
-    LocalDate dataFi = schedule.getDataFi();
+    LocalDate initialDate = schedule.getInitialDate();
+    LocalDate endDate = schedule.getEndDate();
     ArrayList<DayOfWeek> workDays = schedule.getWorkDays();
-    LocalTime horaInici = schedule.getHoraInici();
-    LocalTime horaFi = schedule.getHoraFi();
+    LocalTime initialHour = schedule.getInitialHour();
+    LocalTime endHour = schedule.getEndHour();
 
     //Transform now attributes (date of the html) into LocalDate, DayOfWeek and LocalTime
     LocalDate nowDate = now.toLocalDate();
@@ -122,8 +125,8 @@ public class UserGroup {
 
     /*Set of booleans that check if the date, day and hour of the request is between the date, day and hour
     allowed to the UserGroup (this) UserGroup belongs*/
-    boolean dateAuthorization = ((nowDate.isEqual(dataInici) || nowDate.isAfter(dataInici))
-        && (nowDate.isEqual(dataFi) || nowDate.isBefore(dataFi)));
+    boolean dateAuthorization = ((nowDate.isEqual(initialDate) || nowDate.isAfter(initialDate))
+        && (nowDate.isEqual(endDate) || nowDate.isBefore(endDate)));
 
     /*Check that the date captured in the Request is between the interval of dates the UserGroup has authorization
     to do specific actions*/
@@ -131,8 +134,8 @@ public class UserGroup {
     /*Check that the dayOfWeek captured in the Request is among the daysOfWeek the UserGroup has authorization
     to do specific actions*/
 
-    boolean timeAuthorization = ((nowTime.equals(horaInici) || nowTime.isAfter(horaInici))
-        && (nowTime.equals(horaFi) || nowTime.isBefore(horaFi)));
+    boolean timeAuthorization = ((nowTime.equals(initialHour) || nowTime.isAfter(initialHour))
+        && (nowTime.equals(endHour) || nowTime.isBefore(endHour)));
     /*Check that the time captured in the Request is between the interval day of time the User has authorization
     to do specific actions*/
 
