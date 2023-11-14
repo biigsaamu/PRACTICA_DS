@@ -31,6 +31,13 @@
     <logger name="basenostates.Space" level="debug"/>
     <logger name="basenostates.DirectoryAreas" level="debug"/>
     <logger name="basenostates.Actions" level="debug"/>
+
+    <logger name="basenostates.DoorState.Propped" level="info"/>
+    <logger name="basenostates.User" level="info"/>
+    <logger name="basenostates.Schedule" level="info"/>
+    <logger name="basenostates.Door" level="info"/>
+    <logger name="basenostates.Clock" level="info"/>
+    <logger name="basenostates.Main" level="info"/>
     <!---->
 
     <!--Second Landmark classes-->
