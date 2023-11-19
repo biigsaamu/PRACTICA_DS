@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 public class Door {
   // Basic unit of the system which Users interact to.
 
-  Logger logger = LoggerFactory.getLogger("basenostates.Door");
+  final Logger logger = LoggerFactory.getLogger("basenostates.Door");
   private final String id;
   private boolean closed; // physically
   private DoorState ds; // Reference the state of the door

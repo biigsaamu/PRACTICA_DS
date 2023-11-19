@@ -12,10 +12,10 @@ public class Clock extends Observable {
    * Furthermore has a lazy initialization with public method getInstance(). So we can declare a Clock  wherever
    * other class we want. In this case it is located in UnlockedShortly */
 
-  static Logger clockLogger = LoggerFactory.getLogger("basenostates.Clock");
+  static final Logger clockLogger = LoggerFactory.getLogger("basenostates.Clock");
   public static final int CLOCK_PERIOD = 1;
-  private Timer timer;
-  private int period;
+  private final Timer timer;
+  private final int period;
   private static Clock uniqueClock = null;
 
   // Constructor

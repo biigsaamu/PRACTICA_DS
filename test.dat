@@ -1,198 +1,357 @@
-21:29:58.505 [main] DEBUG basenostates.Area -
-                basement has building as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                parking has basement as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                ground_floor has building as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                hall has ground_floor as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                room1 has ground_floor as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                room2 has ground_floor as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                floor1 has building as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                room3 has floor1 as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                corridor has floor1 as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                IT has floor1 as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                exterior has building as father;
-21:29:58.505 [main] DEBUG basenostates.Area -
-                stairs has building as father;
-21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
-                Is building in DirectoryAreas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area building building?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Yes it is! :)
-21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
-                Is ground_floor in DirectoryAreas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area ground_floor building?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area ground_floor among building areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area ground_floor basement?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area ground_floor among basement areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area ground_floor is not parking
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area ground_floor is not in basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area ground_floor is not basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area ground_floor ground_floor?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Yes it is! :)
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area ground_floor is ground_floor
-21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
-                Is floor1 in DirectoryAreas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area floor1 building?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area floor1 among building areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area floor1 basement?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area floor1 among basement areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not parking
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not in basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area floor1 ground_floor?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area floor1 among ground_floor areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not hall
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not room1
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not room2
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not in ground_floor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is not ground_floor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area floor1 floor1?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Yes it is! :)
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area floor1 is floor1
-21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
-                Is exterior in DirectoryAreas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior building?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior among building areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior basement?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior among basement areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not parking
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not in basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior ground_floor?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior among ground_floor areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not hall
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not room1
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not room2
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not in ground_floor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not ground_floor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior floor1?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area exterior among floor1 areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not room3
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not corridor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not IT
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not in floor1
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is not floor1
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area exterior is exterior
-21:29:58.505 [main] DEBUG basenostates.DirectoryUserGroups -
-                Is stairs in DirectoryAreas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs building?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs among building areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs basement?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs among basement areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not parking
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not in basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not basement
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs ground_floor?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs among ground_floor areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not hall
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not room1
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not room2
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not in ground_floor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not ground_floor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs floor1?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Is area stairs among floor1 areas?
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not room3
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not corridor
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not IT
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not in floor1
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not floor1
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is not exterior
-21:29:58.505 [main] DEBUG basenostates.Area.Partition -
-                Area stairs is stairs
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                User User{name=Ernest, credential=74984} added to employees UserGroup
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                User User{name=Eulalia, credential=43295} added to employees UserGroup
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                Schedule fixed to employees UserGroup
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                User User{name=Manel, credential=95783} added to manegers UserGroup
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                User User{name=Marta, credential=05827} added to manegers UserGroup
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                Schedule fixed to manegers UserGroup
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                User User{name=Ana, credential=11343} added to admin UserGroup
-21:29:58.516 [main] DEBUG basenostates.UserGroup -
-                Schedule fixed to admin UserGroup
+11:50:50.188 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area ground_floor, parking?
+11:50:50.188 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area floor1, parking?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area floor1, hall?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area floor1, room1?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area floor1, room2?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, parking?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, hall?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, room1?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, room2?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, room3?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, corridor?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, it?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area exterior, exterior?
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, parking?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, hall?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, room1?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, room2?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, room3?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, corridor?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, it?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, exterior?
+11:50:50.196 [main] WARN  basenostates.Area.Space -
+                [findAreaById Space class]. No it isn't :(
+11:50:50.196 [main] INFO  basenostates.Area.Space -
+                [findAreaById Space class]. Is area stairs, stairs?
+11:50:50.196 [main] WARN  basenostates.User -
+                UserErnest  with credential 74984 has null group assignation for now
+11:50:50.196 [main] WARN  basenostates.User -
+                UserEulalia  with credential 43295 has null group assignation for now
+11:50:50.196 [main] WARN  basenostates.User -
+                UserManel  with credential 95783 has null group assignation for now
+11:50:50.196 [main] WARN  basenostates.User -
+                UserMarta  with credential 05827 has null group assignation for now
+11:50:50.196 [main] WARN  basenostates.User -
+                UserAna  with credential 11343 has null group assignation for now
+11:50:50.196 [main] WARN  basenostates.Schedule -
+                Schedule has null userGroup for now
+11:50:50.196 [main] WARN  basenostates.Schedule -
+                Schedule has null userGroup for now
+11:50:50.196 [main] WARN  basenostates.Schedule -
+                Schedule has null userGroup for now
+11:50:50.204 [main] INFO  basenostates.User -
+                UserErnest  with credential 74984 is assigned toemployeesuserGroup
+11:50:50.204 [main] INFO  basenostates.User -
+                UserEulalia  with credential 43295 is assigned toemployeesuserGroup
+11:50:50.204 [main] INFO  basenostates.Schedule -
+                Schedule is assigned to employees userGroup
+11:50:50.204 [main] INFO  basenostates.User -
+                UserManel  with credential 95783 is assigned tomanegersuserGroup
+11:50:50.204 [main] INFO  basenostates.User -
+                UserMarta  with credential 05827 is assigned tomanegersuserGroup
+11:50:50.204 [main] INFO  basenostates.Schedule -
+                Schedule is assigned to manegers userGroup
+11:50:50.204 [main] INFO  basenostates.User -
+                UserAna  with credential 11343 is assigned toadminuserGroup
+11:50:50.204 [main] INFO  basenostates.Schedule -
+                Schedule is assigned to admin userGroup
+11:50:50.221 [main] INFO  basenostates.WebServer -
+                Server started.
+Listening for connections on port : 8080 ...
+
+11:51:18.862 [Thread-0] INFO  basenostates.WebServer -
+                sockedthread : GET /refresh HTTP/1.1
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                input GET /refresh HTTP/1.1
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                method GET
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                resource /refresh
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                0 refresh
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                refresh, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.865 [Thread-0] INFO  basenostates.WebServer -
+                null, 
+11:51:18.874 [Thread-0] DEBUG basenostates.WebServer -
+                created request refresh RequestRefresh{[]}
+11:51:18.881 [Thread-0] DEBUG basenostates.WebServer -
+                processed request refresh RequestRefresh{[{"closed":true,"id":"D1","state":"unlocked"}, {"closed":true,"id":"D2","state":"unlocked"}, {"closed":true,"id":"D3","state":"unlocked"}, {"closed":true,"id":"D4","state":"unlocked"}, {"closed":true,"id":"D5","state":"unlocked"}, {"closed":true,"id":"D6","state":"unlocked"}, {"closed":true,"id":"D7","state":"unlocked"}, {"closed":true,"id":"D8","state":"unlocked"}, {"closed":true,"id":"D9","state":"unlocked"}]}
+11:51:18.881 [Thread-0] DEBUG basenostates.WebServer -
+                answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{"doors":[{"closed":true,"id":"D1","state":"unlocked"},{"closed":true,"id":"D2","state":"unlocked"},{"closed":true,"id":"D3","state":"unlocked"},{"closed":true,"id":"D4","state":"unlocked"},{"closed":true,"id":"D5","state":"unlocked"},{"closed":true,"id":"D6","state":"unlocked"},{"closed":true,"id":"D7","state":"unlocked"},{"closed":true,"id":"D8","state":"unlocked"},{"closed":true,"id":"D9","state":"unlocked"}]}
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                sockedthread : GET /reader?credential=11343&action=lock&datetime=2023-11-19T09:30&doorId=D5 HTTP/1.1
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                input GET /reader?credential=11343&action=lock&datetime=2023-11-19T09:30&doorId=D5 HTTP/1.1
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                method GET
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                resource /reader?credential=11343&action=lock&datetime=2023-11-19T09:30&doorId=D5
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                0 reader
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                1 credential
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                2 11343
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                3 action
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                4 lock
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                5 datetime
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                6 2023-11-19T09:30
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                7 doorId
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                8 D5
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                reader, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                credential, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                11343, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                action, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                lock, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                datetime, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                2023-11-19T09:30, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                doorId, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                D5, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.872 [Thread-1] INFO  basenostates.WebServer -
+                null, 
+11:51:23.903 [Thread-1] DEBUG basenostates.WebServer -
+                created request reader Request{credential=11343, userName=unknown, action=lock, now=2023-11-19T09:30, doorID=D5, closed=false, authorized=false, reasons=[]}
+11:51:23.903 [Thread-1] DEBUG basenostates.DirectoryAreas -
+                Door with id D5 found
+11:51:23.903 [Thread-1] INFO  basenostates.User -
+                User Ana can lock the door
+11:51:23.903 [Thread-1] INFO  basenostates.User -
+                User Ana is in Schedule time
+11:51:23.920 [Thread-1] INFO  basenostates.User -
+                User Ana has permission to enter to Space hall
+11:51:23.920 [Thread-1] INFO  basenostates.User -
+                User Ana has permission to enter to Space room1
+11:51:23.928 [Thread-1] DEBUG basenostates.WebServer -
+                processed request reader Request{credential=11343, userName=unknown, action=lock, now=2023-11-19T09:30, doorID=D5, closed=true, authorized=true, reasons=[]}
+11:51:23.928 [Thread-1] DEBUG basenostates.WebServer -
+                answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{"reasons":[],"authorized":true,"action":"lock","closed":true,"state":"locked","doorId":"D5"}
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                sockedthread : GET /reader?credential=11343&action=unlock&datetime=2023-11-19T09:30&doorId=D5 HTTP/1.1
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                input GET /reader?credential=11343&action=unlock&datetime=2023-11-19T09:30&doorId=D5 HTTP/1.1
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                method GET
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                resource /reader?credential=11343&action=unlock&datetime=2023-11-19T09:30&doorId=D5
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                0 reader
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                1 credential
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                2 11343
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                3 action
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                4 unlock
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                5 datetime
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                6 2023-11-19T09:30
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                7 doorId
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                8 D5
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                reader, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                credential, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                11343, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                action, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                unlock, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                datetime, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                2023-11-19T09:30, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                doorId, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                D5, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] INFO  basenostates.WebServer -
+                null, 
+11:51:26.340 [Thread-2] DEBUG basenostates.WebServer -
+                created request reader Request{credential=11343, userName=unknown, action=unlock, now=2023-11-19T09:30, doorID=D5, closed=false, authorized=false, reasons=[]}
+11:51:26.340 [Thread-2] DEBUG basenostates.DirectoryAreas -
+                Door with id D5 found
+11:51:26.340 [Thread-2] INFO  basenostates.User -
+                User Ana can unlock the door
+11:51:26.346 [Thread-2] INFO  basenostates.User -
+                User Ana is in Schedule time
+11:51:26.346 [Thread-2] INFO  basenostates.User -
+                User Ana has permission to enter to Space hall
+11:51:26.346 [Thread-2] INFO  basenostates.User -
+                User Ana has permission to enter to Space room1
+11:51:26.347 [Thread-2] DEBUG basenostates.DoorState.Locked -
+                Door D5 successfully unlocked
+11:51:26.347 [Thread-2] DEBUG basenostates.WebServer -
+                processed request reader Request{credential=11343, userName=unknown, action=unlock, now=2023-11-19T09:30, doorID=D5, closed=true, authorized=true, reasons=[]}
+11:51:26.347 [Thread-2] DEBUG basenostates.WebServer -
+                answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{"reasons":[],"authorized":true,"action":"unlock","closed":true,"state":"unlocked","doorId":"D5"}

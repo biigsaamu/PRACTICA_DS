@@ -14,17 +14,17 @@ public abstract class Area {
 
   //Logger
   //Logger logger = LoggerFactory.getLogger(Area.class);
-  Logger logger = LoggerFactory.getLogger("basenostates.Area");
+  final Logger logger = LoggerFactory.getLogger("basenostates.Area");
 
-  protected String id;
-  protected String description;
-  protected Partition father;
+  protected final String id;
+  protected final String description;
+  protected final Partition father;
 
   public Area(String id, String description, Partition father) {
     this.id = id;
     this.description = description;
     if (father != null) {
-      father.addArea(this); //Tree construction assigning child (this area) to the father (Partition)
+      father.addChildrenArea(this);
       this.father = father;
       logger.debug(this.id + " has " + this.father.getId() + " as father;");
     } else {

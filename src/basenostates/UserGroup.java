@@ -2,43 +2,32 @@ package basenostates;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.time.LocalDateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class UserGroup {
-/*Class that represents a UserGroup with:
-* - Users in it
-* - Allowed areas to enter
-* - Allowed actions to do
-* - Work Schedule
-*
-* UserGroups are declared at DirectoryUserGroups and each one of them have their own characteristics.
-* */
+  //Class that represents a UserGroup. An UserGroup is a group of users with specific
+  // characteristics:
+  // Allowed areas to enter
+  // Allowed actions to do
+  // Work Schedule
 
   Logger logger = LoggerFactory.getLogger("basenostates.UserGroup");
   private final String name;
   private final ArrayList<User> users;
-  //A userGroup can be composed by more than one user
-
   private final ArrayList<Area> userGroupAreas;
-  /*A userGroup can have access to a specific number of areas represented by this attribute*/
-
   private ArrayList<String> actions = new ArrayList<>();
-  //String list with the actions that the UserGroup is allowed to do
-
   private final Schedule schedule;
 
-  public UserGroup(String name, ArrayList<User> users, ArrayList<Area> userGroupAreas, ArrayList<String> actions, Schedule schedule){
+  public UserGroup(String name, ArrayList<User> users, ArrayList<Area> userGroupAreas,
+                   ArrayList<String> actions, Schedule schedule) {
     this.name = name;
     this.users = users;
-    if (!this.users.isEmpty()){
-      /*If the Users list passed by parameter is not empty, then set this UserGroup to every User in the list.
-      So Users finally are associated to one UserGroup.
-      Because when they (Users) are initialized in makeUserGroups() the attribute UserGroup is null*/
-      for (User user : this.users){
+    if (!this.users.isEmpty()) {
+      for (User user : this.users) {
         user.setUserGroup(this);
         logger.debug("User " + user + " added to " + this.name + " UserGroup");
       }
@@ -46,7 +35,6 @@ public class UserGroup {
     this.userGroupAreas = userGroupAreas;
     this.actions = actions;
     this.schedule = schedule;
-    //Assigns this UserGroup to the Schedule
     this.schedule.setUserGroup(this);
     logger.debug("Schedule fixed to " + this.name + " UserGroup");
   }
@@ -59,94 +47,56 @@ public class UserGroup {
     return name;
   }
 
-/*
-  public void setUserGroupArea(Area area) {
-    //Adds a new area to the userGroupAreas list
-    userGroupAreas.add(area);
-  }
-
-  public void setSchedule(Schedule schedule) {
-    this.schedule = schedule;
-  }
-
-  public Schedule getSchedule() {
-    return schedule;
-  }
-
-  public ArrayList<Area> getUserGroupAreas() {
-    return userGroupAreas;
-  }
-
-  public void setUser(User user) {
-    //Adds a new user to the users list
-    users.add(user);
-  }
-
-  public ArrayList<String> getActions(){return actions;}
-  */
-
-
-  public ArrayList<Space> getSpaces(){
-    /*Calls getSpaces() of the Areas associated to this UserGroup. Applying recursion and returning the list of
-      Spaces where all the Users of this UserGroup has access*/
+  public ArrayList<Space> getSpaces() {
     ArrayList<Space> userGroupSpaces = new ArrayList<>();
-    for (Area area : userGroupAreas){
+    for (Area area : userGroupAreas) {
       userGroupSpaces.addAll(area.getSpaces());
     }
     return userGroupSpaces;
   }
 
-  public boolean isAllowedToEnter(Space space){
-    /*The method verifies if the UserGroup has permission to enter to the Space passed by parameter*/
-    ArrayList<Space> userGroupSpaces = getSpaces(); //return the Spaces that the UserGroup has access
+  public boolean isAllowedToEnter(Space space) {
+    //WHERE: The method verifies if the UserGroup has permission to enter to a specific Space
 
-    /*System.out.println("Allowed Spaces to enter:"); C
-    for (Space s: userGroupSpaces){
-      System.out.println(s.id);
-    }*/
-
+    ArrayList<Space> userGroupSpaces = getSpaces();
     return userGroupSpaces.contains(space);
-      //The Space is among the areas rang the UserGroup has permission to enter
+
   }
-  public boolean isInWorkSchedule(LocalDateTime now){
-    /*This method verifies that the dateTime (now) passed by parameter is within the working time of a UserGroup*/
 
-    //Get information of User UserGroup Schedule
-    LocalDate initialDate = schedule.getInitialDate();
-    LocalDate endDate = schedule.getEndDate();
-    ArrayList<DayOfWeek> workDays = schedule.getWorkDays();
-    LocalTime initialHour = schedule.getInitialHour();
-    LocalTime endHour = schedule.getEndHour();
+  public boolean isInWorkSchedule(LocalDateTime now) {
+    //WHEN: This method verifies that the dateTime (now) passed by parameter is within the
+    // working time of a UserGroup (date, day and time authorizations)
 
-    //Transform now attributes (date of the html) into LocalDate, DayOfWeek and LocalTime
+    LocalDate userGroupInitialDate = schedule.getInitialDate();
+    LocalDate userGroupEndDate = schedule.getEndDate();
+    ArrayList<DayOfWeek> userGroupWorkDays = schedule.getWorkDays();
+    LocalTime userGroupInitialHour = schedule.getInitialHour();
+    LocalTime userGroupEndHour = schedule.getEndHour();
+
+    //Transform now attributes (selected LocalDateTime in the simulator)
+    //into LocalDate, DayOfWeek and LocalTime
     LocalDate nowDate = now.toLocalDate();
     LocalTime nowTime = now.toLocalTime();
     DayOfWeek nowDayOfWeek = now.getDayOfWeek();
 
-    /*Set of booleans that check if the date, day and hour of the request is between the date, day and hour
-    allowed to the UserGroup (this) UserGroup belongs*/
-    boolean dateAuthorization = ((nowDate.isEqual(initialDate) || nowDate.isAfter(initialDate))
-        && (nowDate.isEqual(endDate) || nowDate.isBefore(endDate)));
 
-    /*Check that the date captured in the Request is between the interval of dates the UserGroup has authorization
-    to do specific actions*/
-    boolean dayOfWeekAuthorization = workDays.contains(nowDayOfWeek);
-    /*Check that the dayOfWeek captured in the Request is among the daysOfWeek the UserGroup has authorization
-    to do specific actions*/
+    boolean dateAuthorization = (
+        (nowDate.isEqual(userGroupInitialDate) || nowDate.isAfter(userGroupInitialDate))
+        && (nowDate.isEqual(userGroupEndDate) || nowDate.isBefore(userGroupEndDate)));
 
-    boolean timeAuthorization = ((nowTime.equals(initialHour) || nowTime.isAfter(initialHour))
-        && (nowTime.equals(endHour) || nowTime.isBefore(endHour)));
-    /*Check that the time captured in the Request is between the interval day of time the User has authorization
-    to do specific actions*/
+    boolean dayOfWeekAuthorization = userGroupWorkDays.contains(nowDayOfWeek);
+
+    boolean timeAuthorization = (
+        (nowTime.equals(userGroupInitialHour) || nowTime.isAfter(userGroupInitialHour))
+        && (nowTime.equals(userGroupEndHour) || nowTime.isBefore(userGroupEndHour)));
+
 
     return (dateAuthorization && dayOfWeekAuthorization && timeAuthorization);
-      //If all the conditions are met the Request can be done in terms of time (when)
 
   }
 
-  public boolean isActionAuthorized(String action){
-    /*What: The method verifies if this UserGroup is allowed to do the action passed by parameter.
-    Returns true if it is the case. If not false.*/
+  public boolean isActionAuthorized(String action) {
+    //WHAT: The method verifies if this UserGroup is allowed to do the action passed by parameter.
     return actions.contains(action);
   }
 }

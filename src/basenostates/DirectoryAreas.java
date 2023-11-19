@@ -16,12 +16,23 @@ this class
 
 public class DirectoryAreas {
 
-  static Logger logger = LoggerFactory.getLogger("basenostates.DirectoryAreas");
+  static final Logger logger = LoggerFactory.getLogger("basenostates.DirectoryAreas");
 
+  private static DirectoryAreas uniqueDirectoryAreas = null;
   private static Area rootArea;
   private static ArrayList<Door> allDoors;
 
-  public static void makeAreas() { //Add method in main once finished
+  private DirectoryAreas() {
+  }
+
+  public static DirectoryAreas getInstance() {
+    if (uniqueDirectoryAreas == null) {
+      uniqueDirectoryAreas = new DirectoryAreas();
+    }
+    return uniqueDirectoryAreas;
+  }
+
+  public void makeAreas() { //Add method in main once finished
 
     //Areas declaration
     Partition building = new Partition("building", "", null);
@@ -59,12 +70,12 @@ public class DirectoryAreas {
 
   }
 
-  public static Area findAreaById(String id) { //Change code in request reader lately
+  public Area findAreaById(String id) { //Change code in request reader lately
     return rootArea.findAreaById(id);
     //Returns the id of the Area if it is found. If not returns null
   }
 
-  public static Door findDoorById(String id) {
+  public Door findDoorById(String id) {
     for (Door door : allDoors) {
       if (door.getId().equals(id)) {
         logger.debug("Door with id " + id + " found");

@@ -75,8 +75,8 @@ public class RequestReader implements Request {
   // see if the request is authorized and put this into the request, then send it to the door.
   // if authorized, perform the action.
   public void process() {
-    User user = DirectoryUserGroups.findUserByCredential(credential); //Original DirectoryUsers.findUserByCredential(credential)
-    Door door = DirectoryAreas.findDoorById(doorId); //Original DirectoryDoors.findDoorById(doorId)
+    User user = DirectoryUserGroups.getInstance().findUserByCredential(credential);
+    Door door = DirectoryAreas.getInstance().findDoorById(doorId);
     assert door != null : "door " + doorId + " not found";
     authorize(user, door); //Change by user priorities
     // this sets the boolean authorize attribute of the request
@@ -86,30 +86,28 @@ public class RequestReader implements Request {
     doorClosed = door.isClosed();
   }
 
+
   // the result is put into the request object plus, if not authorized, why not,
   // only for testing
   private void authorize(User user, Door door) {
     if (user == null) {
-      /*The User passed by parameter was not found in the ACU database.
-      DirectoryUserGroups.findUserByCredential(credential) returned a null*/
       authorized = false;
       addReason("user doesn't exists");
     } else {
-      boolean what = user.isAllowedToDoAction(action); /*Checks if the User can do the action requested*/
-      boolean when = user.isInWorkTime(now); /*Checks if the User is in work time to do the action requested*/
-      boolean where = (user.isAllowedToBeInSpace(door.getFromSpace()) && user.isAllowedToBeInSpace(door.getToSpace()));
-      /*Checks if the User has access to the Spaces the door/doors connect*/
-      //TODO: get the who, where, when and what in order to decide, and if not
-      // authorized add the reason(s)
-      if (what){
-        if (when){
-          if (where){
+      boolean what = user.isAllowedToDoAction(action);
+      boolean when = user.isInWorkTime(now);
+      boolean where = (user.isAllowedToBeInSpace(door.getFromSpace())
+          && user.isAllowedToBeInSpace(door.getToSpace()));
+
+      if (what) {
+        if (when) {
+          if (where) {
             authorized = true;
-          }else{
+          } else {
             addReason("user doesn't have access to one/both area/s");
             authorized = false;
           }
-        }else {
+        } else {
           addReason("user isn't in time to do the action");
           authorized = false;
         }

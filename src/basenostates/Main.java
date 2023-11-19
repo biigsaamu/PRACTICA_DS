@@ -10,14 +10,10 @@ public class Main {
 
   public static void main(String[] args) {
 
-    /* DirectoryDoors is merged into DirectoryAreas
-     * DirectoryUsers is merged into DirectoryUserGroup */
     Logger logger = LoggerFactory.getLogger("basenostates.Main");
     logger.trace("entering Main");
-    //DirectoryDoors.makeDoors();
-    DirectoryAreas.makeAreas();
-    //DirectoryUsers.makeUsers();
-    DirectoryUserGroups.makeUserGroups();
+    DirectoryAreas.getInstance().makeAreas();
+    DirectoryUserGroups.getInstance().makeUserGroups();
     new WebServer();
   }
 }
