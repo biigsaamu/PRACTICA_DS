@@ -41,6 +41,8 @@
     <!---->
 
     <!--Second Landmark classes-->
+    <logger name="basenostates.AreaFinderById" level="info"/>
+
     <!---->
 
 </configuration>

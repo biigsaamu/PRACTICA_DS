@@ -35,9 +35,9 @@ public class DirectoryAreas {
   public void makeAreas() { //Add method in main once finished
 
     //Areas declaration
-    Partition building = new Partition("building", "", null);
+    Partition building = new Partition("building", "building is the root of the building tree", null);
     Partition basement = new Partition("basement", "", building);
-    Space parking = new Space("parking", "", basement);
+    Space parking = new Space("parking", "Space for park the employees cars. Has a maximum of 5 places", basement);
     Partition groundFloor = new Partition("ground_floor", "", building);
     Space hall = new Space("hall", "", groundFloor);
     Space room1 = new Space("room1", "", groundFloor);

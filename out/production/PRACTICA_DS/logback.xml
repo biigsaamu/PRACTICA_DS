@@ -22,13 +22,27 @@
     </root>
     <!--Declarar tantas lineas de logger como logger haya en el programa. Crear logger en la classe e importar Logger y LoggerFactory-->
     <!--First Landmark classes-->
-    <logger name="basenostates.Area" level="debug"/>
+    <logger name="Area.class" level="debug"/>
     <logger name="basenostates.DoorState" level="debug"/>
     <logger name="basenostates.UserGroup" level="debug"/>
     <logger name="basenostates.DirectoryUserGroups" level="debug"/>
+    <logger name="basenostates.Locked" level="debug"/>
+    <logger name="basenostates.WebServer" level="debug"/>
+    <logger name="basenostates.Space" level="debug"/>
+    <logger name="basenostates.DirectoryAreas" level="debug"/>
+    <logger name="basenostates.Actions" level="debug"/>
+
+    <logger name="basenostates.DoorState.Propped" level="info"/>
+    <logger name="basenostates.User" level="info"/>
+    <logger name="basenostates.Schedule" level="info"/>
+    <logger name="basenostates.Door" level="info"/>
+    <logger name="basenostates.Clock" level="info"/>
+    <logger name="basenostates.Main" level="info"/>
     <!---->
 
     <!--Second Landmark classes-->
+    <logger name="basenostates.AreaFinderById" level="info"/>
+
     <!---->
 
 </configuration>
