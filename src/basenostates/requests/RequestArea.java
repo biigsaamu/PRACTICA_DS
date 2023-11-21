@@ -1,9 +1,9 @@
 package basenostates.requests;
 
-import basenostates.Actions;
-import basenostates.Area;
-import basenostates.DirectoryAreas;
-import basenostates.Door;
+import basenostates.fita1.Actions;
+import basenostates.fita1.Area;
+import basenostates.fita1.DirectoryAreas;
+import basenostates.fita1.Door;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import org.json.JSONArray;

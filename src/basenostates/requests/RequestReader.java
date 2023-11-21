@@ -1,6 +1,6 @@
 package basenostates.requests;
 
-import basenostates.*;
+import basenostates.fita1.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

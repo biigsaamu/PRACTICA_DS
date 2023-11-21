@@ -1,7 +1,7 @@
 package basenostates.requests;
 
-import basenostates.DirectoryAreas;
-import basenostates.Door;
+import basenostates.fita1.DirectoryAreas;
+import basenostates.fita1.Door;
 import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONObject;
