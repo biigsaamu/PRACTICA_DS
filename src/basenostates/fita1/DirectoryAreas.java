@@ -6,12 +6,14 @@ import java.util.Arrays;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/*
-We use Singleton in this class, we have static methods such
-as rootArea and allDoors, their static variables maintain a single,
-global state that is accessible through static methods.
-We also use Composite because we treat partition and spaces in
-this class
+/**
+ * The DirectoryAreas class implements the Singleton pattern that
+ * guarantees a single global instance. This class is used to define and organize partitions,
+ * spaces and gates in the system. It uses the Composite pattern to represent the
+ * hierarchical structure of areas and spaces, where Partition and Space are
+ * treated as composite objects. The DirectoryAreas class allows the creation of
+ * these objects and maintains a collection of all doors. By encapsulating the
+ * directory and providing methods to find areas and gates by ID.
  */
 
 public class DirectoryAreas {
@@ -35,9 +37,9 @@ public class DirectoryAreas {
   public void makeAreas() { //Add method in main once finished
 
     //Areas declaration
-    Partition building = new Partition("building", "building is the root of the building tree", null);
+    Partition building = new Partition("building", "building, the root of the building tree", null);
     Partition basement = new Partition("basement", "", building);
-    Space parking = new Space("parking", "Space for park the employees cars. Has a maximum of 5 places", basement);
+    Space parking = new Space("parking", "Space, park the employees cars(5 places max).", basement);
     Partition groundFloor = new Partition("ground_floor", "", building);
     Space hall = new Space("hall", "", groundFloor);
     Space room1 = new Space("room1", "", groundFloor);

@@ -1,4 +1,5 @@
 package basenostates.fita1;
+
 import basenostates.requests.Request;
 import basenostates.requests.RequestArea;
 import basenostates.requests.RequestReader;
@@ -20,13 +21,16 @@ import org.slf4j.LoggerFactory;
 // https://www.ssaurel.com/blog/create-a-simple-http-web-server-in-java
 // http://www.jcgonzalez.com/java-socket-mini-server-http-example
 
-/*
-In this clas we use the Command design patterns, we encapsulate
-a request for some operation under a method such as the process
-method where the corresponding operation is executed.
-We also use Factory Method which encapsulates the creation logic
-of several objects as Request, RequestRefresh, etc... to facilitate
-the code extension.
+/**
+ * WebServer is a class that implements a basic HTTP server. The class manages HTTP
+ * requests and generates appropriate answers, acting as a central point of communication
+ * in an access control system. The class uses design patterns Command and Factory Method.
+ * The Command pattern is applied in the form of processing different types of requests
+ * (Request), encapsulating each operation in methods as 'process'. This allows for code
+ * extension, as new requests can be added with minimal modification. The Factory Method
+ * pattern is used to encapsulate the creation of different request objects such as
+ * RequestRefresh, RequestReader, etc., thus facilitating code extension and addition of
+ * new request types.
  */
 
 public class WebServer {
@@ -34,7 +38,7 @@ public class WebServer {
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.WebServer");
   private static final int PORT = 8080; // port to listen connection
   private static final DateTimeFormatter formatter =
-          DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
+      DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
 
   public WebServer() {
     try {
