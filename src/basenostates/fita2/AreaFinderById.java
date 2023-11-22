@@ -40,27 +40,28 @@ public class AreaFinderById implements Visitor {
   }
 
   public void visitSpace(Space space) {
-    logger.info("Is area " + this.id + ", Space " + space.getId() + "?");
+    logger.info("[S] Is area " + this.id + ", Space " + space.getId() + "?");
     if (this.id.equals(space.getId())) {
-      logger.debug("Yes it is! :)");
+      logger.debug("[S] Yes it is! :)");
       this.foundArea = true;
       this.area = space;
     } else {
-      logger.warn("No it isn't :(");
+      logger.warn("[S] No it isn't :(");
     }
   }
 
   public void visitPartition(Partition partition) {
     //Recursive function that calls this class or Space "findAreaById" method.
     //Asserts if the id is among the areas of the ACU
-    logger.debug("Is area " + this.id + ", Partition " + partition.getId() + "?");
+    String name = partition.getId();
+    logger.debug("[P] Is area " + this.id + ", Partition " + name + "?");
     if (this.id.equals(partition.getId())) {
-      logger.debug("Yes it is! :)");
+      logger.debug("[P] Yes it is! :)");
       this.foundArea = true;
       this.area = partition;
     } else {
       ArrayList<Area> partitionAreas = partition.getAreas();
-      logger.debug("Is area " + this.id + " among " + partition.getId() + " areas?");
+      logger.debug("[P] Is area " + this.id + " among " + partition.getId() + " areas?");
       Iterator<Area> iterator = partitionAreas.iterator();
       while (iterator.hasNext() && !this.foundArea) {
         Area childrenArea = iterator.next();

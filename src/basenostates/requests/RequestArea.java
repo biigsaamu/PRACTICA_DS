@@ -6,6 +6,8 @@ import basenostates.fita1.DirectoryAreas;
 import basenostates.fita1.Door;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+
+import basenostates.fita2.AreaFinderById;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -68,7 +70,17 @@ public class RequestArea implements Request {
   public void process() {
     // make the door requests and put them into the area request to be authorized later and
     // processed later
-    Area area = DirectoryAreas.getInstance().findAreaById(areaId);
+    Area area = null;
+
+    AreaFinderById requestFinder = new AreaFinderById(areaId);
+    Area root = DirectoryAreas.getInstance().getRootArea();
+    root.acceptVisitor(requestFinder);
+    if (requestFinder.isAreaFound()) {
+      area = requestFinder.getArea();
+    }
+
+    //Area area = DirectoryAreas.getInstance().findAreaById(areaId); OR THIS?
+
     if (area != null) {
       // is null when from the app we click on an action but no place is selected because
       // there (flutter) I don't control like I do in javascript that all the parameters are provided

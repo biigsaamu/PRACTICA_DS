@@ -49,6 +49,7 @@ public class Space extends Area {
   public Area findAreaById(String id) {
     /*Compares the id searched with the id of the Space.
     So if it is equals this Space is the one that was being found and the method returns this.id*/
+    /*
     logger.info("[findAreaById Space class]. Is area " + id + ", " + this.id + "?");
     if (this.id.equals(id)) {
       logger.debug("[findAreaById Space class]. Yes it is!");
@@ -57,6 +58,9 @@ public class Space extends Area {
       logger.warn("[findAreaById Space class]. No it isn't :(");
       return null;
     }
+*/
+    logger.warn("NO DEBERIAS ESTAR AQUÍ");
+    return null;
   }
 
   public ArrayList<Space> getSpaces() { //Returns the actual space (this) in a Space ArrayList

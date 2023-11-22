@@ -48,10 +48,11 @@ public class Partition extends Area {
 
   }
 
+
   public Area findAreaById(String id) {
     //Recursive function that calls this class or Space "findAreaById" method.
     //Asserts if the id is among the areas of the ACU
-
+/*
     logger.debug("Is area " + id + ", " + this.id + "?");
     if (this.id.equals(id)) {
       logger.debug("Yes it is! :)");
@@ -70,7 +71,12 @@ public class Partition extends Area {
       logger.debug("Area " + id + " is not in " + this.id);
       return null;
     }
+
+ */
+    logger.warn("NO DEBERIAS ESTAR AQUÍ");
+    return null;
   }
+
 
   public ArrayList<Space> getSpaces() {
     ArrayList<Space> partitionSpaces = new ArrayList<>();

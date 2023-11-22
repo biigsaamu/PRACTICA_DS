@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 
 public class Door {
   /* Basic unit of the system which Users interact to. The Door should know its own
-   * state (DoorState), and if it is physically closed (boolean). Users can do
-   * actions to the Door according to the Actions class, and the Door should be able
+   * state (DoorState), and if it is physically closed (boolean).
+   * Users can do actions to the Door according to the Actions class, and the Door should be able
    * to determine the corresponding DoorState transition by receiving a User request.
    * Every Door had to know the Areas which it connects, this is needed when a User
    * wants to access some Area by crossing the corresponding Door, because they had

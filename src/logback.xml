@@ -16,19 +16,18 @@
     </appender>
 
     <!--Info lvl default-->
-    <root level="info">
+    <root level="debug">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
     </root>
     <!--Declarar tantas lineas de logger como logger haya en el programa. Crear logger en la classe e importar Logger y LoggerFactory-->
-    <!--First Landmark classes-->
-
-    <logger name="basenostates.fita1.Area" level="OFF"/>
+    <!--First Landmark classes
+    <logger name="basenostates.fita1.Area" level="debug"/>
     <logger name="basenostates.fita1.DoorState" level="debug"/>
     <logger name="basenostates.fita1.UserGroup" level="debug"/>
     <logger name="basenostates.fita1.DirectoryUserGroups" level="debug"/>
     <logger name="basenostates.fita1.Locked" level="debug"/>
-    <logger name="basenostates.fita1.WebServer" level="debug"/>
+    <logger name="basenostates.fita1.WebServer" level="" />
     <logger name="basenostates.fita1.Space" level="debug"/>
     <logger name="basenostates.fita1.DirectoryAreas" level="debug"/>
     <logger name="basenostates.fita1.Actions" level="debug"/>
@@ -39,12 +38,13 @@
     <logger name="basenostates.fita1.Door" level="info"/>
     <logger name="basenostates.fita1.Clock" level="info"/>
     <logger name="basenostates.fita1.Main" level="info"/>
+    -->
 
     <logger name="basenostates.fita1" level="OFF"/>
     <!---->
 
     <!--Second Landmark classes-->
-    <logger name="basenostates.fita2.AreaFinderById" level="info"/>
+    <logger name="basenostates.fita2.AreaFinderById" level="debug"/>
 
     <!---->
 

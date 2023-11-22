@@ -1,146 +1,40 @@
-19:52:49.122 [main] DEBUG b.fita1.DirectoryUserGroups -
-                Is building in DirectoryAreas?
-19:52:49.122 [main] DEBUG b.fita1.DirectoryUserGroups -
-                Is ground_floor in DirectoryAreas?
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area ground_floor, Space parking?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] DEBUG b.fita1.DirectoryUserGroups -
-                Is floor1 in DirectoryAreas?
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area floor1, Space parking?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area floor1, Space hall?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area floor1, Space room1?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area floor1, Space room2?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] DEBUG b.fita1.DirectoryUserGroups -
-                Is exterior in DirectoryAreas?
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space parking?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space hall?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space room1?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space room2?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space room3?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space corridor?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space it?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area exterior, Space exterior?
-19:52:49.122 [main] DEBUG b.fita1.DirectoryUserGroups -
-                Is stairs in DirectoryAreas?
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space parking?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space hall?
-19:52:49.122 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.122 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space room1?
-19:52:49.138 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.138 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space room2?
-19:52:49.138 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.138 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space room3?
-19:52:49.138 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.138 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space corridor?
-19:52:49.138 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.138 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space it?
-19:52:49.138 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.138 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space exterior?
-19:52:49.138 [main] WARN  basenostates.fita2.AreaFinderById -
-                No it isn't :(
-19:52:49.138 [main] INFO  basenostates.fita2.AreaFinderById -
-                Is area stairs, Space stairs?
-19:52:49.138 [main] WARN  basenostates.fita1.User -
-                UserErnest  with credential 74984 has null group assignation for now
-19:52:49.138 [main] WARN  basenostates.fita1.User -
-                UserEulalia  with credential 43295 has null group assignation for now
-19:52:49.138 [main] WARN  basenostates.fita1.User -
-                UserManel  with credential 95783 has null group assignation for now
-19:52:49.138 [main] WARN  basenostates.fita1.User -
-                UserMarta  with credential 05827 has null group assignation for now
-19:52:49.138 [main] WARN  basenostates.fita1.User -
-                UserAna  with credential 11343 has null group assignation for now
-19:52:49.138 [main] WARN  basenostates.fita1.Schedule -
-                Schedule has null userGroup for now
-19:52:49.138 [main] WARN  basenostates.fita1.Schedule -
-                Schedule has null userGroup for now
-19:52:49.138 [main] WARN  basenostates.fita1.Schedule -
-                Schedule has null userGroup for now
-19:52:49.138 [main] INFO  basenostates.fita1.User -
-                UserErnest  with credential 74984 is assigned toemployeesuserGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                User User{name=Ernest, credential=74984} added to employees UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.User -
-                UserEulalia  with credential 43295 is assigned toemployeesuserGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                User User{name=Eulalia, credential=43295} added to employees UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.Schedule -
-                Schedule is assigned to employees userGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                Schedule fixed to employees UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.User -
-                UserManel  with credential 95783 is assigned tomanegersuserGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                User User{name=Manel, credential=95783} added to manegers UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.User -
-                UserMarta  with credential 05827 is assigned tomanegersuserGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                User User{name=Marta, credential=05827} added to manegers UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.Schedule -
-                Schedule is assigned to manegers userGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                Schedule fixed to manegers UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.User -
-                UserAna  with credential 11343 is assigned toadminuserGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                User User{name=Ana, credential=11343} added to admin UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.Schedule -
-                Schedule is assigned to admin userGroup
-19:52:49.138 [main] DEBUG basenostates.fita1.UserGroup -
-                Schedule fixed to admin UserGroup
-19:52:49.138 [main] INFO  basenostates.fita1.WebServer -
-                Server started.
-Listening for connections on port : 8080 ...
-
+08:48:05.607 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
