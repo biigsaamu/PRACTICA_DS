@@ -96,25 +96,30 @@ public class UnlockedShortly extends DoorState implements Observer {
     Duration timeBetweenDatesTime = Duration.between(dateBeforeObserving, dateTime);
 
     if (door.isClosed()) {
-      logger.info("The door " + door.getId() + " is closed after being unlocked_shortly.Change to Locked");
+      logger.info("The door " + door.getId()
+              + " is closed after being unlocked_shortly.Change to Locked");
       door.setState(new Locked(door));
-      Clock.getInstance().deleteObserver(this); //Removes the observer from the Observable (Clock) observer's list
+      Clock.getInstance().deleteObserver(this);
+      //Removes the observer from the Observable (Clock) observer's list
     } else if (timeBetweenDatesTime.getSeconds() >= OBSERVING_TIME) {
-      /*Checks if the time between dates is equal or more than OBSERVING_TIME (10s).
-      If it is the case, the state (UnlockedShortly) has to analyze the door characteristics
-      and change to the appropriate state (Locked or Propped)*/
-      logger.warn("Passed 10 or more sec btw " + dateBeforeObserving.toLocalTime() + " and " + dateTime.toLocalTime());
+      //Checks if the time between dates is equal or more than OBSERVING_TIME (10s).
+      //If it is the case, the state (UnlockedShortly) has to analyze the door characteristics
+      //and change to the appropriate state (Locked or Propped)
+      logger.warn("Passed 10 or more sec btw " + dateBeforeObserving.toLocalTime()
+              + " and " + dateTime.toLocalTime());
       if (door.isClosed()) {
-        logger.info("This door " + door.getId() + " is closed after being unlocked_shortly. Change state to Locked");
+        logger.info("This door " + door.getId()
+                + " is closed after being unlocked_shortly. Change state to Locked");
         door.setState(new Locked(door));
       } else {
-        logger.warn("This door " + door.getId() + " is still open after being unlocked_shortly. Change state to Propped");
+        logger.warn("This door " + door.getId()
+                + " is still open after being unlocked_shortly. Change state to Propped");
         door.setState(new Propped(door));
       }
-      //System.out.println(Clock.getInstance().countObservers());
+      logger.debug("Before delete, observer count: " + Clock.getInstance().countObservers());
       Clock.getInstance().deleteObserver(this);
       logger.info(this.name + " state from " + door.getId() + " removed as an observer");
-      //System.out.println(Clock.getInstance().countObservers());
+      logger.debug("After delete, observer count: " + Clock.getInstance().countObservers());
     }
   }
 }

@@ -9,8 +9,8 @@ import org.slf4j.LoggerFactory;
 
 public class Schedule {
   // this class can be a record, that by definition is a class only used for representing data
-  // in this case Schedule is used by representing the corresponding rol schedule, which is
-  // required by UserGroup.
+  // in this case Schedule represents the specifics working date parameter in which a UserGroup
+  // is able to realize the corresponding actions.
   
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.Schedule");
   private UserGroup userGroup;

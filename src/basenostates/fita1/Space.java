@@ -20,7 +20,7 @@ public class Space extends Area {
 
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.Area.Space");
 
-  private ArrayList<Door> doorsGivingAccess;
+  private final ArrayList<Door> doorsGivingAccess;
 
   public Space(String id, String description, Partition father) {
     super(id, description, father);

@@ -1,12 +1,11 @@
 package basenostates.fita1;
 
+import basenostates.fita2.AreaSpacesFinder;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
-
-import basenostates.fita2.AreaSpacesFinder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -59,12 +58,6 @@ public class UserGroup {
     }
     logger.info("UserGroup Spaces: " + userGroupSpaces);
     return userGroupSpaces;
-/*
-    ArrayList<Space> userGroupSpaces = new ArrayList<>();
-    for (Area area : userGroupAreas) {
-      userGroupSpaces.addAll(area.getSpaces());
-    }
-    return userGroupSpaces;*/
   }
 
   public boolean isAllowedToEnter(Space space) {
