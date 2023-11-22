@@ -4,12 +4,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Propped extends DoorState {
-  /* DoorState type (State pattern) where a User only can do the Close action to the Door:
-   * - Close: The door turn into Locked state after this action
-   * This is the only action the User can do to the door in this state,but very important
-   * to be there, because the only way to reset the Door's state into a "normal" state
-   * (Locked) is closing it.
-   * */
+  // DoorState type (State pattern) where a User only can do the Close action to the Door:
+  // - Close: The door turn into Locked state after this action
+  // This is the only action the User can do to the door in this state,but very important
+  // to be there, because the only way to reset the Door's state into a "normal" state
+  // (Locked) is closing it
 
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.DoorState.Propped");
 
