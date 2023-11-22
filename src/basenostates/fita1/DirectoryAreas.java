@@ -35,19 +35,21 @@ public class DirectoryAreas {
   public void makeAreas() { //Add method in main once finished
 
     //Areas declaration
-    Partition building = new Partition("building", "building, the root of the building tree", null);
-    Partition basement = new Partition("basement", "", building);
+    Partition building = new Partition("building", "Partition, the root of the building tree",
+        null);
+    Partition basement = new Partition("basement", "Partition, underground floor", building);
     Space parking = new Space("parking", "Space, park the employees cars(5 places max).", basement);
-    Partition groundFloor = new Partition("ground_floor", "", building);
-    Space hall = new Space("hall", "", groundFloor);
-    Space room1 = new Space("room1", "", groundFloor);
-    Space room2 = new Space("room2", "", groundFloor);
-    Partition floor1 = new Partition("floor1", "", building);
-    Space room3 = new Space("room3", "", floor1);
-    Space corridor = new Space("corridor", "", floor1);
-    Space it = new Space("it", "", floor1);
-    Space exterior = new Space("exterior", "", building);
-    Space stairs = new Space("stairs", "", building);
+    Partition groundFloor = new Partition("ground_floor", "Partition, the main entrance is there",
+        building);
+    Space hall = new Space("hall", "Space, reception is there", groundFloor);
+    Space room1 = new Space("room1", "Space, exposition room", groundFloor);
+    Space room2 = new Space("room2", "Space, meeting room", groundFloor);
+    Partition floor1 = new Partition("floor1", "Partition, Working area", building);
+    Space room3 = new Space("room3", "Space, employee's working room", floor1);
+    Space corridor = new Space("corridor", "Space, connect the floor 1 rooms", floor1);
+    Space it = new Space("it", "Space, IT department", floor1);
+    Space exterior = new Space("exterior", "Space, building outside", building);
+    Space stairs = new Space("stairs", "Space, connects all building floors", building);
 
     //Doors declaration
     //basement

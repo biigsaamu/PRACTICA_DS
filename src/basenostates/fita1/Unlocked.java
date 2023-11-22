@@ -25,10 +25,8 @@ public class Unlocked extends DoorState {
   }
 
   public void open() {
-    //User opens a door and sets boolean attribute closed to true *
     if (door.isClosed()) {
       door.setClosed(false);
-      //System.out.println(door.getStateName()); //Shows the door state
       logger.debug("Door " + door.getId() + " successfully opened");
     } else {
       logger.warn("Door " + door.getId() + " already opened");
@@ -36,7 +34,6 @@ public class Unlocked extends DoorState {
   }
 
   public void close() {
-    //User closes a door and sets boolean attribute closed to false *
     if (!door.isClosed()) {
       door.setClosed(true);
       logger.debug("Door " + door.getId() + " successfully closed");
@@ -47,17 +44,14 @@ public class Unlocked extends DoorState {
 
   public void lock() {
     if (door.isClosed()) {
-      //User tries to lock a closed door */
       door.setState(new Locked(door));
-      //System.out.println(door.getStateName());
       logger.debug("Door " + door.getId() + " successfully locked");
-    } else { //User tries to lock an opened door *
+    } else {
       logger.debug("Door " + door.getId() + " is opened. Close first to lock it");
     }
   }
 
   public void unlock() {
-    //Can not unlock a door that is already unlocked
     logger.debug("Door " + door.getId() + " is already unlocked");
   }
 

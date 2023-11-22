@@ -60,7 +60,6 @@ public class Door {
         break;
       case Actions.UNLOCK_SHORTLY:
         ds.unlock_shortly();
-        //System.out.println("Action " + action + " not implemented yet");
         break;
       default:
         assert false : "Unknown action " + action;

@@ -35,9 +35,9 @@ public class Clock extends Observable {
         }
       }
     };
-    /* Repeats a task each period times. In this case every second.
-     * So observers are notified by every second
-     * */
+    // Repeats a task each period times. In this case every second.
+    //So observers are notified by every secon
+
     timer.scheduleAtFixedRate(repeatedTask, 0, 1000 * period);
   }
 

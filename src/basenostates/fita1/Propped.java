@@ -22,7 +22,6 @@ public class Propped extends DoorState {
   }
 
   public void open() {
-    //System.out.println("Door " + door.getId() + " is propped. You can only close it");
     logger.info("Door " + door.getId() + " is propped, only can be closed");
   }
 
@@ -33,21 +32,17 @@ public class Propped extends DoorState {
     door.setState(new Locked(door));
     logger.debug("Door " + door.getId() + " state set into" + door.getStateName());
     logger.info("Door " + door.getId() + " successfully locked after closing");
-    //System.out.println("Door " + door.getId() + " successfully closed");
   }
 
   public void lock() {
-    //System.out.println("Door " + door.getId() + " is propped. You can only close it");
     logger.info("Door " + door.getId() + " is propped, only can be closed");
   }
 
   public void unlock() {
-    //System.out.println("Door " + door.getId() + " is propped. You can only close it");
     logger.info("Door " + door.getId() + " is propped, only can be closed");
   }
 
   public void unlock_shortly() {
-    //System.out.println("Door " + door.getId() + " is propped. You can only close it");
     logger.info("Door " + door.getId() + " is propped, only can be closed");
   }
 }

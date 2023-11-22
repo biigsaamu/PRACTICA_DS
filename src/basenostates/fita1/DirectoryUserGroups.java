@@ -102,9 +102,9 @@ public class DirectoryUserGroups {
     ArrayList<User> managersUsers = new ArrayList<>(Arrays.asList(Manel, Marta));
     ArrayList<User> adminUsers = new ArrayList<>(List.of(Ana));
 
-    //UserGroup actions creation
+    // UserGroup actions creation
 
-    //Real important: Added open and close actions to employees as the teacher encourage to
+    // Important: Added open and close actions to employees as the teacher encourage to
     // implement it after Fita 1 session.
     // In order to make a more realistic ACS.
 

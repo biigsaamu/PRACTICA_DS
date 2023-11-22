@@ -40,7 +40,7 @@ public class Space extends Area {
   }
 
 
-  public ArrayList<Space> getSpaces() { //Returns the actual space (this) in a Space ArrayList
+  public ArrayList<Space> getSpaces() {
     ArrayList<Space> spaceList = new ArrayList<>();
     spaceList.add(this);
     return spaceList;

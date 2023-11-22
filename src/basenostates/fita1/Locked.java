@@ -4,10 +4,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Locked extends DoorState {
-  /*DoorState type where a User can do actions:
-   * - Unlock
-   * - UnlockShortly
-   */
+  //DoorState type where a User can do actions:
+  //- Unlock: The turn into Unlocked state after this action
+  //- UnlockShortly: The Door unlocks shortly (UnlockedShortly state)
+  // The Locked class defines the behaviour of a door when it is in a locked
+  // state. In this state, actions such as opening or closing the door are
+  // restricted, but some actions can be performed to unlock the door.
+  // Locked is a concrete state from DoorState, which allows an object (Door) to change
+  // its behaviour according to its internal state.
+  // This structure facilitates behaviour modification without altering the
+  // Door class.
 
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.DoorState.Locked");
 
@@ -32,16 +38,14 @@ public class Locked extends DoorState {
     logger.info("This door " + door.getId() + " is already locked");
   }
 
-  public void unlock() { //User tries to unlock the door *
+  public void unlock() { //User tries to unlock the door
     door.setState(new Unlocked(door));
-    //System.out.println(door.getStateName());
     logger.debug("Door " + door.getId() + " successfully unlocked");
   }
 
   public void unlock_shortly() {
     door.setClosed(false);
     door.setState(new UnlockedShortly(door));
-    //System.out.println(door.getStateName());
     logger.debug("Door " + door.getId() + " successfully unlocked_shortly");
   }
 }
