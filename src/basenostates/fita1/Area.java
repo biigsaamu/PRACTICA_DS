@@ -1,8 +1,7 @@
 package basenostates.fita1;
 
-import java.util.ArrayList;
-
 import basenostates.fita2.Visitor;
+import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
