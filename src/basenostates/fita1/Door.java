@@ -32,9 +32,9 @@ public class Door {
   }
 
   public void processRequest(RequestReader request) {
-    /* it is the Door that process the request because the door has and knows
-     * its state, and if closed or open
-     * */
+    // it is the Door that process the request because the door has and knows
+    // its state, and if closed or open
+    
     String action = request.getAction();
     if (request.isAuthorized()) {
       doAction(action);
