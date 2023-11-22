@@ -4,14 +4,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-// The Locked class is a concrete implementation of DoorState, representing the state
-// in which a door is locked. In this state, the allowed actions for the user are mainly
-// unlock ('unlock') or unlock briefly ('unlock_shortly'). Being part of the State design
-// pattern, this class allows the door object to dynamically change its behaviour according
-// to its state. In the design, state change is handled internally within the state classes,
-// encapsulating the specific logic of each state and thus promoting higher cohesion and
-// lower coupling.
-
+// The Locked class defines the behaviour of a door when it is in a locked
+// state. In this state, actions such as opening or closing the door are
+// restricted, but actions can be performed to unlock the door.
+// Locked uses the State pattern, which allows an object (Door) to change
+// its behaviour according to its internal state. This pattern is
+// implemented through concrete state classes such as 'Locked', which
+// encapsulate the specific behaviours associated with each door state.
+// This structure facilitates behaviour modification without altering the
+// Door class.
 
 public class Locked extends DoorState {
   /*DoorState type where a User can do actions:
