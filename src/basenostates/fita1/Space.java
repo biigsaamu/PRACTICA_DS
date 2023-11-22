@@ -2,18 +2,17 @@ package basenostates.fita1;
 
 import basenostates.fita2.Visitor;
 import java.util.ArrayList;
-
-import basenostates.fita2.Visitor;
+//import basenostates.fita2.Visitor;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * The Space class specifies the spaces we have and the relation with the access and door control
- * system. A Space object contains a list of doors that give access to it.
- * This class uses the Composite pattern, representing the hierarchical structure
- * of areas and spaces,where the Space is a leaf of the tree structure.
- */
+
+// The Space class specifies the spaces we have and the relation with the access and door control
+// system. A Space object contains a list of doors that give access to it.
+// This class uses the Composite pattern, representing the hierarchical structure
+// of areas and spaces,where the Space is a leaf of the tree structure.
+
 
 public class Space extends Area {
   /*Class leaf (simple object), that heritages Area methods.

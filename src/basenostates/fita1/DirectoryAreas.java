@@ -6,15 +6,14 @@ import java.util.Arrays;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * The DirectoryAreas class implements the Singleton pattern that
- * guarantees a single global instance. This class is used to define and organize partitions,
- * spaces and gates in the system. It uses the Composite pattern to represent the
- * hierarchical structure of areas and spaces, where Partition and Space are
- * treated as composite objects. The DirectoryAreas class allows the creation of
- * these objects and maintains a collection of all doors. By encapsulating the
- * directory and providing methods to find areas and gates by ID.
- */
+
+// The DirectoryAreas class implements the Singleton pattern that
+// guarantees a single global instance. This class is used to define and organize partitions,
+// spaces and gates in the system. It uses the Composite pattern to represent the
+// hierarchical structure of areas and spaces, where Partition and Space are
+// treated as composite objects. The DirectoryAreas class allows the creation of
+// these objects and maintains a collection of all doors. By encapsulating the
+// directory and providing methods to find areas and gates by ID.
 
 public class DirectoryAreas {
 

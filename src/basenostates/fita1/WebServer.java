@@ -21,17 +21,14 @@ import org.slf4j.LoggerFactory;
 // https://www.ssaurel.com/blog/create-a-simple-http-web-server-in-java
 // http://www.jcgonzalez.com/java-socket-mini-server-http-example
 
-/**
- * WebServer is a class that implements a basic HTTP server. The class manages HTTP
- * requests and generates appropriate answers, acting as a central point of communication
- * in an access control system. The class uses design patterns Command and Factory Method.
- * The Command pattern is applied in the form of processing different types of requests
- * (Request), encapsulating each operation in methods as 'process'. This allows for code
- * extension, as new requests can be added with minimal modification. The Factory Method
- * pattern is used to encapsulate the creation of different request objects such as
- * RequestRefresh, RequestReader, etc., thus facilitating code extension and addition of
- * new request types.
- */
+//This class is responsible for starting an HTTP server and managing
+//HTTP requests. It is used to process GET requests, interpret the
+//parameters of these requests and generate appropriate responses in
+//JSON format.
+//We use it to create a server that listens continuously on the specified
+//port, accepting incoming connections. Each client connection is
+//managed in a separate thread (SocketThread), allowing the server to
+//manage multiple requests simultaneously.
 
 public class WebServer {
 
