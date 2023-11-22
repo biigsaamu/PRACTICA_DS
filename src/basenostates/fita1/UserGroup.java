@@ -54,7 +54,8 @@ public class UserGroup {
 
     for (Area area : userGroupAreas) {
       area.acceptVisitor(userAreaSpacesFinder);
-      userGroupSpaces.addAll(area.getSpaces());
+      assert userAreaSpacesFinder.getAreaSpaces() != null;
+      userGroupSpaces.addAll(userAreaSpacesFinder.getAreaSpaces());
     }
     logger.info("UserGroup Spaces: " + userGroupSpaces);
     return userGroupSpaces;

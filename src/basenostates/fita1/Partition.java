@@ -32,21 +32,6 @@ public class Partition extends Area {
     return id;
   }
 
-
-  public ArrayList<Space> getSpaces() {
-    ArrayList<Space> partitionSpaces = new ArrayList<>();
-    for (Area area : areas) {
-      partitionSpaces.addAll(area.getSpaces());
-    }
-    if (partitionSpaces.isEmpty()) {
-      logger.warn("Area " + this.id + " has no Spaces to return");
-      return null;
-    } else {
-      logger.debug("Partition " + id + " has " + partitionSpaces + " Spaces");
-      return partitionSpaces;
-    }
-  }
-
   public void acceptVisitor(Visitor visitor) {
     visitor.visitPartition(this);
   }

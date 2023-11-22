@@ -34,7 +34,5 @@ public abstract class Area {
 
   public abstract String getId();
 
-  public abstract ArrayList<Space> getSpaces();
-
   public abstract void acceptVisitor(Visitor visitor);
 }

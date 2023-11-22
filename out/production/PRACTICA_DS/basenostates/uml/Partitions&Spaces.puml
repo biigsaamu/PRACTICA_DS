@@ -68,26 +68,29 @@ DirectoryAreas --> Area : rootArea
 
 abstract class Area {
 # id : String
-+ {abstract} getDoorsGivingAccess() : Door[]
-+ {abstract} findAreaById(String id) : Area
++ {abstract} getId() : String
 + {abstract} getSpaces() : Space[]
++ {abstract} acceptVisitor(visitor : Visitor) : void
 }
 
 class Partition extends Area{
-+ Partition(id : String, subAreas : Area[])
-+ getDoorsGivingAccess() : Door[]
-+ findAreaById(String id) : Area
-+ getSpaces() : Space[]
-+ addArea(area : Area)
++ Partition(id : String, description : String, father : Partition)
++ addChildrenArea(area : Area)
++ getAreas() : Area[]
++ getId() : String
++ getSpaces : Space[]
++ acceptVisitor(visitor : Visitor) : void
 }
 
 Partition o--> "*" Area : areas
 
 class Space extends Area{
-+ Space(id : String)
++ Space(id : String, description : String, father : Partition)
++ addDoorGivingAccess(door : Door)
 + getDoorsGivingAccess() : Door[]
-+ findAreaById(String id) : Area
++ getId() : String
 + getSpaces() : Space[]
++ acceptVisitor(visitor : Visitor) : void
 }
 
 Space *--> "1..*" Door : doors

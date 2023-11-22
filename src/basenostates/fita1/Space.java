@@ -40,12 +40,6 @@ public class Space extends Area {
   }
 
 
-  public ArrayList<Space> getSpaces() {
-    ArrayList<Space> spaceList = new ArrayList<>();
-    spaceList.add(this);
-    return spaceList;
-  }
-
   public void acceptVisitor(Visitor visitor) {
     visitor.visitSpace(this);
   }

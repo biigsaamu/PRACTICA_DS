@@ -68,8 +68,9 @@ DirectoryAreas --> Area : rootArea
 
 abstract class Area {
 # id : String
+# description : String
+# father : Partition
 + {abstract} getId() : String
-+ {abstract} getSpaces() : Space[]
 + {abstract} acceptVisitor(visitor : Visitor) : void
 }
 
@@ -78,7 +79,6 @@ class Partition extends Area{
 + addChildrenArea(area : Area)
 + getAreas() : Area[]
 + getId() : String
-+ getSpaces : Space[]
 + acceptVisitor(visitor : Visitor) : void
 }
 
@@ -89,7 +89,6 @@ class Space extends Area{
 + addDoorGivingAccess(door : Door)
 + getDoorsGivingAccess() : Door[]
 + getId() : String
-+ getSpaces() : Space[]
 + acceptVisitor(visitor : Visitor) : void
 }
 

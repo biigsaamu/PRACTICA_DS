@@ -1,13 +1,13 @@
-@startuml
+ @startuml
 'https://plantuml.com/class-diagram
 skinparam classAttributeIconSize 0
 
 interface Visitor{
-    -visitSpace(space : Space)
-    -visitPartition(partition : Partition)
+    - {abstract} visitSpace(space : Space)
+    - {abstract} visitPartition(partition : Partition)
 }
 
-class AreaFinderById{
+class AreaFinderById implements Visitor{
     -id : String
     -area : Area;
     -foundArea : boolean;
@@ -19,22 +19,22 @@ class AreaFinderById{
     +visitPartition(partition : Partition)
 }
 
-class AreaSpacesFinder{
-    -areaSpaces : ArrayList<Space>
+class AreaSpacesFinder implements Visitor{
+    -areaSpaces : Space[]
     +AreaSpacesFinder()
-    +getAreaSpaces() : ArrayList<Space>
+    +getAreaSpaces() : Space[]
     +visitSpace(space : Space)
     +visitPartition(partition : Partition)
 
 }
 
-Visitor<|-- AreaFinderById
-Visitor<|-- AreaSpacesFinder
+
 
 abstract class Area {
 # id : String
+# description : String
+# father : Partition
 + {abstract} getId() : String
-+ {abstract} getSpaces() : Space[]
 + {abstract} acceptVisitor(visitor : Visitor) : void
 }
 
@@ -43,7 +43,6 @@ class Partition extends Area{
 + addChildrenArea(area : Area)
 + getAreas() : Area[]
 + getId() : String
-+ getSpaces : Space[]
 + acceptVisitor(visitor : Visitor) : void
 }
 
@@ -54,7 +53,6 @@ class Space extends Area{
 + addDoorGivingAccess(door : Door)
 + getDoorsGivingAccess() : Door[]
 + getId() : String
-+ getSpaces() : Space[]
 + acceptVisitor(visitor : Visitor) : void
 }
 
