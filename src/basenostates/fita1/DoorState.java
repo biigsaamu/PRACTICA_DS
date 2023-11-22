@@ -4,16 +4,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-// The DoorState is a class that defines the structure and behaviour
-// of the different states of a door. Each concrete state of a door will
-// inherit from this class. The purpose of having door states is to handle
-// different allowed or required actions depending on the current
-// state of the door.
-// For example, a door cannot be locked if it is open, and such
-// scenarios are managed through these states.
-// This class is part of the State design pattern, which allows an object to alter its
-// behaviour when its internal state changes.
-
+// The DoorState class is a representation of the current state of a door.
+// Each state defines a specific set of operations and behaviors
+// associated with the door. The need to have states associated with a
+// door arises to manage the different operations and transitions that a
+// door can perform in the access control system.
+// The state of a door is set by the system or by user actions, and can
+// change in response to events.
+// This class applies the State design pattern, it allows the Door object to
+// change its behavior based on its internal state, the door can behave
+// differently depending on its current state.
 
 public abstract class DoorState {
   /*This abstract class is declared to implement de design pattern STATE.
