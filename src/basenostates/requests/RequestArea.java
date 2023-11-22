@@ -1,15 +1,11 @@
 package basenostates.requests;
 
-import basenostates.fita1.Actions;
-import basenostates.fita1.Area;
-import basenostates.fita1.DirectoryAreas;
-import basenostates.fita1.Door;
+import basenostates.fita1.*;
+import basenostates.fita2.AreaFinderById;
+import basenostates.fita2.DoorFinder;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
-
-import basenostates.fita2.AreaFinderById;
-import basenostates.fita2.DoorFinder;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -90,15 +86,22 @@ public class RequestArea implements Request {
     assert area != null : "Situacio valida";
     if (area != null) {
       // is null when from the app we click on an action but no place is selected because
-      // there (flutter) I don't control like I do in javascript that all the parameters are provided
+      // there (flutter)I don't control like I do in javascript that all the parameters are provided
 
       // Make all the door requests, one for each door in the area, and process them.
       // Look for the doors in the spaces of this area that give access to them.
       DoorFinder requestDoorFinder = new DoorFinder();
       area.acceptVisitor(requestDoorFinder);
       logger.debug("Area " + area + "has " + requestDoorFinder.getDoorsGivingSpace() + " as doorsGivingSpace");
-      assert requestDoorFinder.getDoorsGivingSpace() != null;
-      for (Door door : requestDoorFinder.getDoorsGivingSpace()) {
+      assert requestDoorFinder.getAreaSpaces() != null;
+      ArrayList<Door> doorsGivingSpace = new ArrayList<>();
+
+
+      for (Space space : requestDoorFinder.getAreaSpaces()) {
+        doorsGivingSpace.addAll(space.getDoorsGivingAccess());
+      }
+
+      for (Door door : doorsGivingSpace) {
         logger.debug("Door: " + door);
         RequestReader requestReader = new RequestReader(credential, action, now, door.getId());
         requestReader.process();
