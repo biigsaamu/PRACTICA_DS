@@ -75,22 +75,18 @@ public class DirectoryUserGroups {
     }
 
 
-/*
-    logger.debug("Is building in DirectoryAreas?");
-    Area building = DirectoryAreas.getInstance().findAreaById("building");
 
-    logger.debug("Is ground_floor in DirectoryAreas?");
-    Area groundFloor = DirectoryAreas.getInstance().findAreaById("ground_floor");
+    //    logger.debug("Is building in DirectoryAreas?");
+    //    Area building = DirectoryAreas.getInstance().findAreaById("building");
+    //    logger.debug("Is ground_floor in DirectoryAreas?");
+    //    Area groundFloor = DirectoryAreas.getInstance().findAreaById("ground_floor");
+    //    logger.debug("Is floor1 in DirectoryAreas?");
+    //    Area floor1 = DirectoryAreas.getInstance().findAreaById("floor1");
+    //    logger.debug("Is exterior in DirectoryAreas?");
+    //    Area exterior = DirectoryAreas.getInstance().findAreaById("exterior");
+    //    logger.debug("Is stairs in DirectoryAreas?");
+    //    Area stairs = DirectoryAreas.getInstance().findAreaById("stairs");
 
-    logger.debug("Is floor1 in DirectoryAreas?");
-    Area floor1 = DirectoryAreas.getInstance().findAreaById("floor1");
-
-    logger.debug("Is exterior in DirectoryAreas?");
-    Area exterior = DirectoryAreas.getInstance().findAreaById("exterior");
-
-    logger.debug("Is stairs in DirectoryAreas?");
-    Area stairs = DirectoryAreas.getInstance().findAreaById("stairs");
-*/
 
 
     //Create userGroupAreas
@@ -144,7 +140,8 @@ public class DirectoryUserGroups {
     LocalDate dataIniciEmployees = LocalDate.of(2023, 9, 1);
     LocalDate dataFiEmployees = LocalDate.of(2024, 3, 1);
     ArrayList<DayOfWeek> workDaysEmployees = new ArrayList<>(Arrays.asList(
-        DayOfWeek.MONDAY, DayOfWeek.TUESDAY, DayOfWeek.WEDNESDAY, DayOfWeek.THURSDAY, DayOfWeek.FRIDAY));
+        DayOfWeek.MONDAY, DayOfWeek.TUESDAY, DayOfWeek.WEDNESDAY,
+        DayOfWeek.THURSDAY, DayOfWeek.FRIDAY));
     LocalTime horaIniciEmployees = LocalTime.of(9, 0);
     LocalTime horaFiEmployees = LocalTime.of(17, 0);
 
@@ -152,7 +149,8 @@ public class DirectoryUserGroups {
     LocalDate dataIniciManagers = LocalDate.of(2023, 9, 1);
     LocalDate dataFiManagers = LocalDate.of(2024, 3, 1);
     ArrayList<DayOfWeek> workDaysManagers = new ArrayList<>(Arrays.asList(
-        DayOfWeek.MONDAY, DayOfWeek.TUESDAY, DayOfWeek.WEDNESDAY, DayOfWeek.THURSDAY, DayOfWeek.FRIDAY, DayOfWeek.SATURDAY));
+        DayOfWeek.MONDAY, DayOfWeek.TUESDAY, DayOfWeek.WEDNESDAY,
+        DayOfWeek.THURSDAY, DayOfWeek.FRIDAY, DayOfWeek.SATURDAY));
     LocalTime horaIniciManagers = LocalTime.of(8, 0);
     LocalTime horaFiManagers = LocalTime.of(20, 0);
 
@@ -160,7 +158,8 @@ public class DirectoryUserGroups {
     LocalDate dataIniciAdmin = LocalDate.of(2023, 1, 1);
     LocalDate dataFiAdmin = LocalDate.of(2100, 12, 31);
     ArrayList<DayOfWeek> workDaysAdmin = new ArrayList<>(Arrays.asList(
-        DayOfWeek.MONDAY, DayOfWeek.TUESDAY, DayOfWeek.WEDNESDAY, DayOfWeek.THURSDAY, DayOfWeek.FRIDAY, DayOfWeek.SATURDAY, DayOfWeek.SUNDAY));
+        DayOfWeek.MONDAY, DayOfWeek.TUESDAY, DayOfWeek.WEDNESDAY, DayOfWeek.THURSDAY,
+        DayOfWeek.FRIDAY, DayOfWeek.SATURDAY, DayOfWeek.SUNDAY));
     LocalTime horaIniciAdmin = LocalTime.of(0, 0);
     LocalTime horaFiAdmin = LocalTime.of(23, 59);
 
