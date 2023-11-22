@@ -1,14 +1,17 @@
 package basenostates.fita1;
-import java.time.LocalDate;
+
 import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* this class can be a record, that by definition is a class only used for representing data */
 public class Schedule {
-
+  /* this class can be a record, that by definition is a class only used for representing data
+   * in this case Schedule is used by representing the corresponding rol schedule, which is
+   * required by UserGroup.
+   * */
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.Schedule");
   private UserGroup userGroup;
   private final LocalDate initialDate;
@@ -17,7 +20,8 @@ public class Schedule {
   private final LocalTime initialHour;
   private final LocalTime endHour;
 
-  public Schedule(LocalDate initialDate, LocalDate endDate, ArrayList<DayOfWeek> workDays, LocalTime initialHour, LocalTime endHour) {
+  public Schedule(LocalDate initialDate, LocalDate endDate, ArrayList<DayOfWeek> workDays,
+                  LocalTime initialHour, LocalTime endHour) {
     this.initialDate = initialDate;
     this.endDate = endDate;
     this.workDays = workDays;

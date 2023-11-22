@@ -1,4 +1,5 @@
 package basenostates.fita1;
+
 import java.time.LocalDateTime;
 import java.util.Observable;
 import java.util.Timer;
@@ -7,9 +8,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Clock extends Observable {
-  /* Singleton pattern applied. The class has only a unique instance with a private constructor (uniqueClock).
-   * Furthermore has a lazy initialization with public method getInstance(). So we can declare a Clock  wherever
-   * other class we want. In this case it is located in UnlockedShortly */
+  /* Singleton pattern applied. The class has only a unique instance (uniqueClock)
+   * with a private constructor. Furthermore, has a lazy initialization with public
+   * method getInstance(). So we can declare a Clock wherever other class we want.
+   * In this case only UnlockedShortly need it. A lazy initialization allow us to
+   * create an instance of the Clock when we really need it, to avoid resources
+   * consumption.
+   * */
 
   static final Logger clockLogger = LoggerFactory.getLogger("basenostates.fita1.Clock");
   public static final int CLOCK_PERIOD = 1;
@@ -17,7 +22,6 @@ public class Clock extends Observable {
   private final int period;
   private static Clock uniqueClock = null;
 
-  // Constructor
   private Clock() {
     this.period = CLOCK_PERIOD;
     timer = new Timer();
@@ -32,7 +36,9 @@ public class Clock extends Observable {
         }
       }
     };
-    //Repeats a task each period times. In this case every second, So observers are notified by every second
+    /* Repeats a task each period times. In this case every second.
+     * So observers are notified by every second
+     * */
     timer.scheduleAtFixedRate(repeatedTask, 0, 1000 * period);
   }
 

@@ -6,7 +6,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Door {
-  // Basic unit of the system which Users interact to.
+  /* Basic unit of the system which Users interact to. The Door should know its own
+   * state (DoorState), and if it is physically closed (boolean). Users can do
+   * actions to the Door according to the Actions class, and the Door should be able
+   * to determine the corresponding DoorState transition by receiving a User request.
+   * Every Door had to know the Areas which it connects, this is needed when a User
+   * wants to access some Area by crossing the corresponding Door, because they had
+   * to validate the access permission.
+   * */
 
   final Logger logger = LoggerFactory.getLogger("basenostates.fita1.Door");
   private final String id;
@@ -21,12 +28,14 @@ public class Door {
     ds = new Unlocked(this);
     this.fromSpace = fromSpace;
     this.toSpace = toSpace;
-    this.toSpace.addDoorGivingAccess(this); // Add this door to Door's list that gives access to the toSpace Space
+    this.toSpace.addDoorGivingAccess(this);
+    // Add this door to Door's list that gives access to the toSpace Space
   }
 
   public void processRequest(RequestReader request) {
-    // it is the Door that process the request because the door has and knows
-    // its state, and if closed or open
+    /* it is the Door that process the request because the door has and knows
+     * its state, and if closed or open
+     * */
     String action = request.getAction();
     if (request.isAuthorized()) {
       doAction(action);
@@ -46,11 +55,9 @@ public class Door {
         ds.close();
         break;
       case Actions.LOCK:
-        /* If it is closed and wants to be locked, to!. If it is opened, before locking it it must be closed. */
         ds.lock();
         break;
       case Actions.UNLOCK:
-        // fall through
         ds.unlock();
         break;
       case Actions.UNLOCK_SHORTLY:
@@ -89,7 +96,7 @@ public class Door {
     closed = b;
   }
 
-  public void setState(DoorState doorState){
+  public void setState(DoorState doorState) {
     ds = doorState;
   }
 
