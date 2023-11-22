@@ -5,12 +5,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class User {
-  /* Users are individual persons recognized by the system which is identified by
-   * a valid credential (unique). The systems follow a standard approach known as
-   * Role-based access control (RBAC), so every User should know their own rol and
-   * be able to determine if they have permission to access some Area through Door
-   * that give access to them.
-   **/
+  // Users are individual persons recognized by the system which is identified by
+  // a valid credential (unique). The systems follow a standard approach known as
+  // Role-based access control (RBAC), so every User should know their own rol and
+  // be able to determine if they have permission to access some Area through Door
+  // that give access to them.
+  
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.User");
   private final String name;
   private final String credential;
