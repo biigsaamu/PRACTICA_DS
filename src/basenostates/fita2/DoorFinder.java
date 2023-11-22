@@ -5,10 +5,10 @@ import basenostates.fita1.Door;
 import basenostates.fita1.Partition;
 import basenostates.fita1.Space;
 import basenostates.fita2.Visitor;
+import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
 
 public class DoorFinder implements Visitor {
 
@@ -16,21 +16,27 @@ public class DoorFinder implements Visitor {
 
   private ArrayList<Door> doorsGivingSpace;
 
+  private ArrayList<Space> areaSpaces;
+
   public DoorFinder() {
     doorsGivingSpace = new ArrayList<>();
+    areaSpaces = new ArrayList<>();
   }
 
   public ArrayList<Door> getDoorsGivingSpace() {
     return doorsGivingSpace;
   }
 
+  public ArrayList<Space> getAreaSpaces() { return areaSpaces; }
+
   public void visitSpace(Space space) {
 
     if (space.getDoorsGivingAccess().isEmpty()) {
       logger.warn("[S] No Doors giving access to " + space.getId());
     } else {
-      logger.debug("[S] Doors giving access to " + space.getId() + ": " + space.getDoorsGivingAccess());
+      logger.debug("[S]Doors give access to" + space.getId() + ":" + space.getDoorsGivingAccess());
       doorsGivingSpace.addAll(space.getDoorsGivingAccess());
+      areaSpaces.addAll(space.getSpaces());
     }
 
   }
