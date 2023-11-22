@@ -1,5 +1,6 @@
 package basenostates.fita1;
 
+import basenostates.fita2.Visitor;
 import java.util.ArrayList;
 
 import basenostates.fita2.Visitor;
@@ -7,11 +8,11 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/*
-We use Composite design pattern, the Space
-is a child class of the Area class as it
-inherits methods from the parent class and
-allows working with objects and objects compositions
+/**
+ * The Space class specifies the spaces we have and the relation with the access and door control
+ * system. A Space object contains a list of doors that give access to it.
+ * This class uses the Composite pattern, representing the hierarchical structure
+ * of areas and spaces,where the Space is a leaf of the tree structure.
  */
 
 public class Space extends Area {
