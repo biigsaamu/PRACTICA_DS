@@ -1,11 +1,11 @@
 package basenostates.fita2;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 import basenostates.fita1.Area;
 import basenostates.fita1.Partition;
 import basenostates.fita1.Space;
 import basenostates.fita2.Visitor;
+import java.util.ArrayList;
+import java.util.Iterator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
