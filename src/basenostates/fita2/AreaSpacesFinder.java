@@ -4,13 +4,13 @@ import basenostates.fita1.Area;
 import basenostates.fita1.Door;
 import basenostates.fita1.Partition;
 import basenostates.fita1.Space;
-import basenostates.fita2.Visitor;
+
 import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-public class DoorFinder implements Visitor {
+public class AreaSpacesFinder implements Visitor {
 
   Logger logger = LoggerFactory.getLogger("basenostates.fita2.DoorFinder");
 
@@ -18,7 +18,7 @@ public class DoorFinder implements Visitor {
 
   private ArrayList<Space> areaSpaces;
 
-  public DoorFinder() {
+  public AreaSpacesFinder() {
     doorsGivingSpace = new ArrayList<>();
     areaSpaces = new ArrayList<>();
   }

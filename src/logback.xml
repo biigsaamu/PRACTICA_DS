@@ -39,7 +39,7 @@
     <logger name="basenostates.fita1.Clock" level="info"/>
     <logger name="basenostates.fita1.Main" level="info"/>
     -->
-
+    <logger name="basenostates.fita1.UserGroup" level="info"/>
     <logger name="basenostates.fita1" level="OFF"/>
     <!---->
 

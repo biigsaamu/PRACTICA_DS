@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
+
+import basenostates.fita2.AreaSpacesFinder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,10 +51,20 @@ public class UserGroup {
 
   public ArrayList<Space> getSpaces() {
     ArrayList<Space> userGroupSpaces = new ArrayList<>();
+    AreaSpacesFinder userAreaSpacesFinder = new AreaSpacesFinder();
+
+    for (Area area : userGroupAreas) {
+      area.acceptVisitor(userAreaSpacesFinder);
+      userGroupSpaces.addAll(area.getSpaces());
+    }
+    logger.info("UserGroup Spaces: " + userGroupSpaces);
+    return userGroupSpaces;
+/*
+    ArrayList<Space> userGroupSpaces = new ArrayList<>();
     for (Area area : userGroupAreas) {
       userGroupSpaces.addAll(area.getSpaces());
     }
-    return userGroupSpaces;
+    return userGroupSpaces;*/
   }
 
   public boolean isAllowedToEnter(Space space) {
