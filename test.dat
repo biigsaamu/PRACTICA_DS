@@ -1,40 +1,176 @@
-08:48:05.607 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area building, Partition building?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Yes it is! :)
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor, Partition building?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor among building areas?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor, Partition basement?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor among basement areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area ground_floor, Space parking?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor, Partition ground_floor?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Yes it is! :)
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area floor1, Partition building?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area floor1 among building areas?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area floor1, Partition basement?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area floor1 among basement areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space parking?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area floor1, Partition ground_floor?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area floor1 among ground_floor areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space hall?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space room1?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space room2?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area floor1, Partition floor1?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Yes it is! :)
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior, Partition building?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior among building areas?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior, Partition basement?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior among basement areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space parking?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior, Partition ground_floor?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior among ground_floor areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space hall?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space room1?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space room2?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior, Partition floor1?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area exterior among floor1 areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space room3?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space corridor?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space it?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area exterior, Space exterior?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [S] Yes it is! :)
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs, Partition building?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs among building areas?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs, Partition basement?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs among basement areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space parking?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs, Partition ground_floor?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs among ground_floor areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space hall?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space room1?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space room2?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs, Partition floor1?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area stairs among floor1 areas?
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space room3?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space corridor?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space it?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-08:48:05.623 [main] WARN  basenostates.fita2.AreaFinderById -
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space exterior?
+11:08:04.484 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
+11:08:04.484 [main] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area stairs, Space stairs?
+11:08:04.484 [main] DEBUG basenostates.fita2.AreaFinderById -
+                [S] Yes it is! :)
+11:08:14.003 [Thread-1] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor, Partition building?
+11:08:14.003 [Thread-1] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor among building areas?
+11:08:14.003 [Thread-1] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor, Partition basement?
+11:08:14.003 [Thread-1] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor among basement areas?
+11:08:14.003 [Thread-1] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area ground_floor, Space parking?
+11:08:14.003 [Thread-1] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+11:08:14.003 [Thread-1] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Is area ground_floor, Partition ground_floor?
+11:08:14.008 [Thread-1] DEBUG basenostates.fita2.AreaFinderById -
+                [P] Yes it is! :)
+11:08:14.016 [Thread-1] DEBUG basenostates.fita2.DoorFinder -
+                [S] Doors giving access to hall: [Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]
+11:08:14.022 [Thread-1] DEBUG basenostates.fita2.DoorFinder -
+                [S] Doors giving access to room1: [Door{, id='D5', closed=true, state=unlocked}]
+11:08:14.022 [Thread-1] DEBUG basenostates.fita2.DoorFinder -
+                [S] Doors giving access to room2: [Door{, id='D6', closed=true, state=unlocked}]
+11:08:14.022 [Thread-1] INFO  basenostates.fita2.DoorFinder -
+                [P] Doors giving access to ground_floor: [Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}, Door{, id='D5', closed=true, state=unlocked}, Door{, id='D6', closed=true, state=unlocked}]

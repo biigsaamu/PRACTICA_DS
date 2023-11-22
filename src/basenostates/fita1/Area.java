@@ -37,7 +37,7 @@ public abstract class Area {
 
   public abstract String getId();
 
-  public abstract ArrayList<Door> getDoorsGivingAccess();
+  //public abstract ArrayList<Door> getDoorsGivingAccess();
 
   public abstract Area findAreaById(String id);
 

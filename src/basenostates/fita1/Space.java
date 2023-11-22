@@ -35,16 +35,17 @@ public class Space extends Area {
   }
   /*Used in Door constructor*/
 
-  @Override
-  public String getId() {
-    return id;
-  }
-
   public ArrayList<Door> getDoorsGivingAccess() {
     logger.debug("Doors giving access to " + id + ": " + doorsGivingAccess);
     return doorsGivingAccess;
   }
   //Returns a Door's list that gives access to this Space
+
+  @Override
+  public String getId() {
+    return id;
+  }
+
 
   public Area findAreaById(String id) {
     /*Compares the id searched with the id of the Space.

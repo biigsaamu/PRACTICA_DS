@@ -32,6 +32,7 @@ public class Partition extends Area {
     return id;
   }
 
+  /*
   public ArrayList<Door> getDoorsGivingAccess() {
 
     ArrayList<Door> doors = new ArrayList<>();
@@ -47,6 +48,8 @@ public class Partition extends Area {
     }
 
   }
+  */
+
 
 
   public Area findAreaById(String id) {

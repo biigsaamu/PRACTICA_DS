@@ -45,6 +45,8 @@
 
     <!--Second Landmark classes-->
     <logger name="basenostates.fita2.AreaFinderById" level="debug"/>
+    <logger name="basenostates.requests.RequestArea" level="info"/>
+
 
     <!---->
 

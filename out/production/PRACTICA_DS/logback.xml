@@ -16,7 +16,7 @@
     </appender>
 
     <!--Info lvl default-->
-    <root level="warn">
+    <root level="debug">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
     </root>
@@ -44,7 +44,9 @@
     <!---->
 
     <!--Second Landmark classes-->
-    <logger name="basenostates.fita2.AreaFinderById" level=""/>
+    <logger name="basenostates.fita2.AreaFinderById" level="debug"/>
+    <logger name="basenostates.requests.RequestArea" level="info"/>
+
 
     <!---->
 
