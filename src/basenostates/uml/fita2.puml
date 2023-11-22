@@ -2,8 +2,6 @@
 'https://plantuml.com/class-diagram
 skinparam classAttributeIconSize 0
 
-RequestArea -[dashed]-> Visitor
-
 interface Visitor{
     -visitSpace(space : Space)
     -visitPartition(partition : Partition)
@@ -39,8 +37,6 @@ abstract class Area {
 + {abstract} getSpaces() : Space[]
 + {abstract} acceptVisitor(visitor : Visitor) : void
 }
-
-Area -[dashed]-> Visitor
 
 class Partition extends Area{
 + Partition(id : String, description : String, father : Partition)
