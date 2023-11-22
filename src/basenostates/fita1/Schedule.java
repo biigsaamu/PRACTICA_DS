@@ -8,10 +8,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Schedule {
-  /* this class can be a record, that by definition is a class only used for representing data
-   * in this case Schedule is used by representing the corresponding rol schedule, which is
-   * required by UserGroup.
-   * */
+  // this class can be a record, that by definition is a class only used for representing data
+  // in this case Schedule is used by representing the corresponding rol schedule, which is
+  // required by UserGroup.
+  
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.Schedule");
   private UserGroup userGroup;
   private final LocalDate initialDate;
