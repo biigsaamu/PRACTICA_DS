@@ -74,10 +74,6 @@ public class DirectoryAreas {
     return rootArea;
   }
 
-  public Area findAreaById(String id) { //Change code in request reader lately
-    return rootArea.findAreaById(id);
-    //Returns the id of the Area if it is found. If not returns null
-  }
 
   public Door findDoorById(String id) {
     for (Door door : allDoors) {

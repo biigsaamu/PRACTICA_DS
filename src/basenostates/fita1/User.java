@@ -44,17 +44,8 @@ public class User {
     
     boolean authorize = group.isAllowedToEnter(space);
     if (authorize) {
-      // If the condition returns an Area (something different to null).
-      // Means the User has access to the Space as it was found among
-      // the userAreas the User has access permission
-      
-      //System.out.println("User " + this.name + " has permission to enter to Space " + space.id);
       logger.info("User " + this.name + " has permission to enter to Space " + space.id);
     } else {
-      // If the Space is not among the User's UserGroup areas returns false.
-      // The User can not enter to this Space
-      
-      //System.out.println("User " + this.name + " is forbidden to enter to Space " + space.id);
       logger.info("User " + this.name + " is forbidden to enter to Space " + space.id);
     }
     return authorize;
@@ -66,10 +57,8 @@ public class User {
     
     boolean authorize = group.isInWorkSchedule(now);
     if (authorize) {
-      //System.out.println("User " + this.name + " is in Schedule time");
       logger.info("User " + this.name + " is in Schedule time");
     } else {
-      //System.out.println("User " + this.name + " is not in Schedule time");
       logger.info("User " + this.name + " is not in Schedule time");
     }
     return authorize;
@@ -82,10 +71,8 @@ public class User {
     
     boolean authorize = group.isActionAuthorized(action);
     if (authorize) {
-      //System.out.println("User " + this.name + " can " + action + " the door");
       logger.info("User " + this.name + " can " + action + " the door");
     } else {
-      //System.out.println("User " + this.name + " can not " + action + " the door");
       logger.info("User " + this.name + " can not " + action + " the door");
     }
     return authorize;

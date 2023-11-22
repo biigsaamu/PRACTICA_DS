@@ -8,17 +8,14 @@ import org.slf4j.LoggerFactory;
 
 
 public class UnlockedShortly extends DoorState implements Observer {
-  /*DoorState type where a User can do all actions except itself (depending on the privileges).
-  * Furthermore, this state only can have a duration of 10 seconds.
-  * After unlock shortly a door for ten seconds,
-  * if it is still opened it must change of state to Propped.
-  * If it is closed, or it is closed before the 10 seconds
-  * the State changes to Lock.
-  *
-  * We know UnlockedShortly is an Observer of Clock (Observable).
-  * This one notifies every ten seconds the
-  * DoorsState
-  * */
+  //DoorState type where a User can do all actions except itself (depending on the privileges).
+  //Furthermore, this state only can have a duration of 10 seconds.
+  //After unlock shortly a door for ten seconds,
+  //if it is still opened it must change of state to Propped.
+  //If it is closed, or it is closed before the 10 seconds
+  //the State changes to Lock.
+  //We know UnlockedShortly is an Observer of Clock (Observable).
+
 
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.DoorState.UnlockedShortly");
   private final LocalDateTime dateBeforeObserving;
@@ -29,11 +26,10 @@ public class UnlockedShortly extends DoorState implements Observer {
     super(door);
     name = "unlocked_shortly";
     dateBeforeObserving = LocalDateTime.now();
-    /*The parameter saves the exact previous time before observing the Clock.
-     To compare then the date
-     when being notified*/
+    //The parameter saves the exact previous time before observing the Clock.
+    //To compare then the date when being notified
     Clock.getInstance().addObserver(this);
-    //Declare an instance of Clock to declare UnlockedShortly DoorState
+    //Declare an instance of Clock to declare UnlockedShortly
     //an Observer of Clock (Observable)
   }
 
@@ -41,20 +37,18 @@ public class UnlockedShortly extends DoorState implements Observer {
     return name;
   }
 
-  public void open() { //User opens a door and sets boolean attribute closed to true *
+  public void open() {
     if (door.isClosed()) {
       door.setClosed(false);
-      //System.out.println(door.getStateName()); //Shows the door state
       logger.debug("Door " + door.getId() + " successfully opened while UnlockedShortly");
     } else {
       logger.warn("Door " + door.getId() + " already opened");
     }
   }
 
-  public void close() { //User closes a door and sets boolean attribute closed to false *
+  public void close() {
     if (!door.isClosed()) {
       door.setClosed(true);
-      //System.out.println(door.getStateName());
       logger.debug("Door " + door.getId() + " successfully closed while UnlockedShortly");
     } else {
       logger.warn("Door " + door.getId() + " already closed");
@@ -62,18 +56,16 @@ public class UnlockedShortly extends DoorState implements Observer {
   }
 
   public void lock() {
-    if (door.isClosed()) { //User tries to lock a closed door */
+    if (door.isClosed()) {
       door.setState(new Locked(door));
-      //System.out.println(door.getStateName());
       logger.debug("Door " + door.getId() + " successfully locked while UnlockedShortly");
-    } else { //User tries to lock an opened door *
+    } else {
       logger.warn("Door " + door.getId() + " is opened. Close first to lock it");
     }
   }
 
-  public void unlock() { //User tries to unlock the door *
+  public void unlock() {
     door.setState(new Unlocked(door));
-    //System.out.println(door.getStateName());
     logger.warn("Door " + door.getId() + " already unlocked_shortly");
   }
 
@@ -83,22 +75,20 @@ public class UnlockedShortly extends DoorState implements Observer {
 
   @Override
   public void update(java.util.Observable o, Object arg) {
-    /*NOTE (implementation suggestion) --> Slightly change after Fita 1 session,
-    as know if the door is closed before arriving to 10 seconds it must change
-    automatically of state. We check it with the first conditional of the method*/
+    //NOTE (implementation suggestion) --> Slightly change after Fita 1 session,
+    //as know if the door is closed before arriving to 10 seconds it must change
+    //automatically of state. We check it with the first conditional of the method
 
-    /*UnlockedShortly (Observer) updates the state because gets Clock (Observable) notification*/
     LocalDateTime dateTime = (LocalDateTime) arg;
 
-    /*Subscripts the dateBeforeObserving (saved just before the UnlockedShortly
-    state starts to observe the Clock)
-    to the dateTime send by the Observable (Clock)*/
+
     Duration timeBetweenDatesTime = Duration.between(dateBeforeObserving, dateTime);
 
     if (door.isClosed()) {
       logger.info("The door " + door.getId()
               + " is closed after being unlocked_shortly.Change to Locked");
       door.setState(new Locked(door));
+
       Clock.getInstance().deleteObserver(this);
       //Removes the observer from the Observable (Clock) observer's list
     } else if (timeBetweenDatesTime.getSeconds() >= OBSERVING_TIME) {

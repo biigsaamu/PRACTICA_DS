@@ -16,8 +16,7 @@ import org.slf4j.LoggerFactory;
 // differently depending on its current state.
 
 public abstract class DoorState {
-  /*This abstract class is declared to implement de design pattern STATE.
-  * */
+
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.DoorState");
 
   protected Door door;

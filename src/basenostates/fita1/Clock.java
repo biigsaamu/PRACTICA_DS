@@ -8,15 +8,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Clock extends Observable {
-  // Clock is an Observable object that do repeated task by period. We need it to be
-  // able to realize the time count when a DoorState
-  // Clock class implements Singleton pattern, it means that the class will only have
+  // Clock is an Observable object that does a repeated task periodly, notifying his observers
+  // (UnlockedShortly states) every second.
+  // Furthermore, Clock class implements Singleton pattern, it means that the class will only have
   // a unique instance (uniqueClock) with a private constructor.
   // Furthermore, has a lazy initialization with public method getInstance().
-  // So we can declare a Clock wherever other class we want.
-  // In this case only UnlockedShortly need it. A lazy initialization allow us to
-  // create an instance of the Clock when we really need it, to avoid resources
-  // consumption.
+  // So we can declare a Clock wherever other part of the project we want.
 
   static final Logger clockLogger = LoggerFactory.getLogger("basenostates.fita1.Clock");
   public static final int CLOCK_PERIOD = 1;

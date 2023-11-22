@@ -78,38 +78,36 @@ public class RequestArea implements Request {
     if (requestAreaFinder.isAreaFound()) {
       area = requestAreaFinder.getArea();
     } else {
-      assert false : "error";
+      assert false : "error Area not found";
     }
 
-    //Area area = DirectoryAreas.getInstance().findAreaById(areaId); OR THIS?
     assert area != null : "Something is wrong";
-    if (area != null) {
-      // is null when from the app we click on an action but no place is selected because
-      // there (flutter)I don't control like I do in javascript that all the parameters are provided
 
-      // Make all the door requests, one for each door in the area, and process them.
-      // Look for the doors in the spaces of this area that give access to them.
-      AreaSpacesFinder requestAreasSpacesFinder = new AreaSpacesFinder();
-      area.acceptVisitor(requestAreasSpacesFinder);
+    // is null when from the app we click on an action but no place is selected because
+    // there (flutter)I don't control like I do in javascript that all the parameters are provided
 
-      assert requestAreasSpacesFinder.getAreaSpaces() != null;
-      ArrayList<Door> doorsGivingSpace = new ArrayList<>();
+    // Make all the door requests, one for each door in the area, and process them.
+    // Look for the doors in the spaces of this area that give access to them.
+    AreaSpacesFinder requestAreasSpacesFinder = new AreaSpacesFinder();
+    area.acceptVisitor(requestAreasSpacesFinder);
+
+    assert requestAreasSpacesFinder.getAreaSpaces() != null;
+    ArrayList<Door> doorsGivingSpace = new ArrayList<>();
 
 
-      for (Space space : requestAreasSpacesFinder.getAreaSpaces()) {
-        doorsGivingSpace.addAll(space.getDoorsGivingAccess());
-      }
-      logger.debug("Area " + area + "has " + doorsGivingSpace + " as doorsGivingSpace");
-
-      for (Door door : doorsGivingSpace) {
-        logger.debug("Door: " + door);
-        RequestReader requestReader = new RequestReader(credential, action, now, door.getId());
-        requestReader.process();
-        // after process() the area request contains the answer as the answer
-        // to each individual door request, that is read by the simulator/Flutter app
-        requests.add(requestReader);
-      }
+    for (Space space : requestAreasSpacesFinder.getAreaSpaces()) {
+      doorsGivingSpace.addAll(space.getDoorsGivingAccess());
     }
+    logger.debug("Area " + area + "has " + doorsGivingSpace + " as doorsGivingSpace");
 
+    for (Door door : doorsGivingSpace) {
+      logger.debug("Door: " + door);
+      RequestReader requestReader = new RequestReader(credential, action, now, door.getId());
+      requestReader.process();
+      // after process() the area request contains the answer as the answer
+      // to each individual door request, that is read by the simulator/Flutter app
+      requests.add(requestReader);
+    }
   }
+
 }

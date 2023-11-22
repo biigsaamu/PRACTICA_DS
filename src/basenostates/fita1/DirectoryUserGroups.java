@@ -12,7 +12,8 @@ import org.slf4j.LoggerFactory;
 
 public class DirectoryUserGroups {
 
-  //Class that creates and save one unique instance and of each UserGroups that exist in the system
+  //Class that creates and save one unique instance and of each UserGroups that exist in the system.
+  //To do it the Singleton pattern is applied.
 
   static final Logger logger = LoggerFactory.getLogger("basenostates.fita1.DirectoryUserGroups");
   private static final ArrayList<UserGroup> userGroups = new ArrayList<>();
@@ -31,7 +32,7 @@ public class DirectoryUserGroups {
 
   public void makeUserGroups() {
 
-    //Check areas needed to assign to UserGroups are initialized
+    //Check areas, needed to assign to UserGroups, are initialized
     Area root = DirectoryAreas.getInstance().getRootArea();
 
     Area building = null;
@@ -73,20 +74,6 @@ public class DirectoryUserGroups {
     if (stairsFinder.isAreaFound()) {
       stairs = stairsFinder.getArea();
     }
-
-
-
-    //    logger.debug("Is building in DirectoryAreas?");
-    //    Area building = DirectoryAreas.getInstance().findAreaById("building");
-    //    logger.debug("Is ground_floor in DirectoryAreas?");
-    //    Area groundFloor = DirectoryAreas.getInstance().findAreaById("ground_floor");
-    //    logger.debug("Is floor1 in DirectoryAreas?");
-    //    Area floor1 = DirectoryAreas.getInstance().findAreaById("floor1");
-    //    logger.debug("Is exterior in DirectoryAreas?");
-    //    Area exterior = DirectoryAreas.getInstance().findAreaById("exterior");
-    //    logger.debug("Is stairs in DirectoryAreas?");
-    //    Area stairs = DirectoryAreas.getInstance().findAreaById("stairs");
-
 
 
     //Create userGroupAreas
@@ -169,7 +156,7 @@ public class DirectoryUserGroups {
         dataIniciEmployees, dataFiEmployees, workDaysEmployees,
         horaIniciEmployees, horaFiEmployees);
 
-    Schedule manegersSchedule = new Schedule(
+    Schedule managersSchedule = new Schedule(
         dataIniciManagers, dataFiManagers, workDaysManagers, horaIniciManagers, horaFiManagers);
 
     Schedule adminSchedule = new Schedule(
@@ -180,7 +167,7 @@ public class DirectoryUserGroups {
     UserGroup employees = new UserGroup(
         "employees", employeesUsers, employeesAreas, employeesActions, employeesSchedule);
     UserGroup managers = new UserGroup(
-        "manegers", managersUsers, managersAreas, managersActions, manegersSchedule);
+        "managers", managersUsers, managersAreas, managersActions, managersSchedule);
     UserGroup admin = new UserGroup(
         "admin", adminUsers, adminAreas, adminActions, adminSchedule);
 

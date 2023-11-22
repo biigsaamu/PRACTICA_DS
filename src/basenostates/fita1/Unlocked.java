@@ -4,12 +4,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Unlocked extends DoorState {
-  /*Unlocked is a DoorState type where a User can do the following actions(depending on privileges):
-  * - Open
-  * - Close
-  * - Lock
-  * A State can change of State by itself.
-  * */
+  // Unlocked is a DoorState type where a User can do the following actions
+  // (depending on privileges):
+  //- Open
+  //- Close
+  //- Lock
+  //A State can change of State by itself.
+
 
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.DoorState.Unlocked");
   private final String name;

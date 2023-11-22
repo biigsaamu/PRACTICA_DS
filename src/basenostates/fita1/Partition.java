@@ -7,10 +7,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Partition extends Area {
-  //A Partition is an area that can be composed by a Space/s, Partition/s or the combination of
-  // these two.
-  //Class that applies the COMPOSITE pattern. It is the complex object that heritages and
-  // implements Area's abstract methods. Delegating the work to the Leaf objects (Space).
+  //A Partition object applies the COMPOSITE pattern and can be composed by a Space/s,
+  // Partition/s or the combination of these two.
+  //It is the complex object that heritages and
+  //implements Area's abstract methods. Delegating the work to the Leaf objects (Space).
 
   Logger logger = LoggerFactory.getLogger("basenostates.fita1.Area.Partition");
   private final ArrayList<Area> areas = new ArrayList<>();
@@ -31,24 +31,6 @@ public class Partition extends Area {
   public String getId() {
     return id;
   }
-
-  /*
-  public ArrayList<Door> getDoorsGivingAccess() {
-
-    ArrayList<Door> doors = new ArrayList<>();
-    for (Area area : areas) {
-      doors.addAll(area.getDoorsGivingAccess());
-    }
-    if (doors.isEmpty()) {
-      logger.warn("No Doors giving access to " + id);
-      return null;
-    } else {
-      logger.info("Doors " + doors + " giving access to Partition " + id);
-      return doors;
-    }
-
-  }
-  */
 
 
   public ArrayList<Space> getSpaces() {

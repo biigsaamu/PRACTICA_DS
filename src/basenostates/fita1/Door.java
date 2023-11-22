@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Door {
-  // Basic unit of the system which Users interact to. The Door should know its own
+  // A Door is a basic unit of the system which Users interact to. The Door should know its own
   // state (DoorState), and if it is physically closed (boolean).
   // Users can do actions to the Door according to the Actions class, and the Door should be able
   // to determine the corresponding DoorState transition by receiving a User request.
@@ -39,7 +39,6 @@ public class Door {
     if (request.isAuthorized()) {
       doAction(action);
     } else {
-      //System.out.println("not authorized");
       logger.info("not authorized to do the " + action + " action to Door " + id);
     }
     request.setDoorStateName(getStateName());

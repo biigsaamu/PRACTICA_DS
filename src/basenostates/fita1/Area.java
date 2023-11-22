@@ -8,10 +8,10 @@ import org.slf4j.LoggerFactory;
 
 public abstract class Area {
   //An area is declared to implement the design pattern COMPOSITE.
-  //This means that the methods declared in the class are the ones that share and must
-  //be implemented by the heritage classes.
-  //This design pattern composes objects, simple (Space) and composite (Partition),
+  //This pattern composes simple objects (Space) and composite or complex ones (Partition),
   //as tree structures and allows working with them.
+  //The methods declared in the class are the ones that share and must
+  //be implemented by the heritage classes.
 
   final Logger logger = LoggerFactory.getLogger("basenostates.fita1.Area");
 

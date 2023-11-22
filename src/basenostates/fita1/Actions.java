@@ -1,10 +1,10 @@
 package basenostates.fita1;
 
 
-// The Actions class defines the possible actions in the door and access control system.
-// It contains constants representing actions.These constants are used in
-// requests related to access readers and areas, as well as in requests
-// related to doors.
+// The Actions class defines the possible actions a User can do to a door.
+// It contains constants representing actions.
+// These constants are used in requests related to access readers
+// and areas, as well as in requests related to doors.
 
 public final class Actions {
   public static final String LOCK = "lock";
