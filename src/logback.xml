@@ -27,7 +27,7 @@
     <logger name="basenostates.fita1.UserGroup" level="OFF"/>
     <logger name="basenostates.fita1.DirectoryUserGroups" level="OFF"/>
     <logger name="basenostates.fita1.Locked" level="OFF"/>
-    <logger name="basenostates.fita1.WebServer" level="OFF" />
+    <logger name="basenostates.fita1.WebServer" level="debug" />
     <logger name="basenostates.fita1.Space" level="OFF"/>
     <logger name="basenostates.fita1.DirectoryAreas" level="OFF"/>
     <logger name="basenostates.fita1.Actions" level="OFF"/>
@@ -46,6 +46,10 @@
     <!--Second Landmark classes-->
     <logger name="basenostates.fita2.AreaFinderById" level="info"/>
     <logger name="basenostates.fita2.AreaSpacesFinder" level="info"/>
+
+    <!--Requests package-->
+    <logger name="basenostates.requests.RequestChildren" level="info"/>
+
 
 
 

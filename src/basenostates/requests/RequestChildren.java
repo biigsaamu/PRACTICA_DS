@@ -4,10 +4,14 @@ import basenostates.fita1.Area;
 import basenostates.fita1.DirectoryAreas;
 import basenostates.fita2.AreaFinderById;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RequestChildren implements Request {
   private final String areaId;
   private JSONObject jsonTree; // 1 level tree, root and children
+
+  static final Logger logger = LoggerFactory.getLogger("basenostates.requests.RequestChildren");
 
   public RequestChildren(String areaId) {
     this.areaId = areaId;
@@ -35,6 +39,7 @@ public class RequestChildren implements Request {
     root.acceptVisitor(requestAreaFinder);
     if (requestAreaFinder.isAreaFound()) {
       area = requestAreaFinder.getArea();
+      logger.info("Area: " + area);
     } else {
       assert false : "error Area not found";
     }

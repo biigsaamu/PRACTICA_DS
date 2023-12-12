@@ -103,7 +103,9 @@ public class WebServer {
 
           // Here is where we send the request and get the answer inside it
           Request request = makeRequest(tokens);
+          logger.debug("Tokens: " + tokens);
           if (request != null) {
+            logger.debug("Request: " + request.toString());
             String typeRequest = tokens[0];
             logger.debug("created request " + typeRequest + " " + request);
             request.process(); //Crea proces i aten totes les peticions

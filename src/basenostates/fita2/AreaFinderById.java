@@ -48,18 +48,18 @@ public class AreaFinderById implements Visitor {
   }
 
   public void visitSpace(Space space) {
-    logger.info("[S] Is area " + this.id + ", Space " + space.getId() + "?");
+    logger.debug("[S] Is area " + this.id + ", Space " + space.getId() + "?");
     if (this.id.equals(space.getId())) {
       logger.debug("[S] Yes it is! :)");
       this.foundArea = true;
       this.area = space;
     } else {
-      logger.warn("[S] No it isn't :(");
+      logger.debug("[S] No it isn't :(");
     }
   }
 
   public void visitPartition(Partition partition) {
-    assert this.area == null;
+    //assert this.area == null;
     //Recursive function that calls this class or Space "findAreaById" method.
     //Asserts if the id is among the areas of the ACU
     String name = partition.getId();

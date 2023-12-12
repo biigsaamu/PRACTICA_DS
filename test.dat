@@ -1,102 +1,227 @@
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area ground_floor, Space parking?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space parking?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space hall?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space room1?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space room2?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space parking?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space hall?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space room1?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space room2?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space room3?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space corridor?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space it?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area exterior, Space exterior?
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space parking?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space hall?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space room1?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space room2?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space room3?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space corridor?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space it?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space exterior?
-18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area stairs, Space stairs?
-19:00:07.077 [Thread-2] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area parking, Space parking?
-19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space parking?
-19:00:15.708 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space hall?
-19:00:15.708 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space room1?
-19:00:15.708 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
-19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area floor1, Space room2?
-19:00:15.709 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
-                [S] No it isn't :(
+20:32:52.384 [main] INFO  basenostates.fita2.AreaFinderById -
+                ELSE TT
+20:32:52.384 [main] INFO  basenostates.fita2.AreaFinderById -
+                ELSE TT
+20:32:52.384 [main] INFO  basenostates.fita2.AreaFinderById -
+                ELSE TT
+20:32:52.384 [main] INFO  basenostates.fita2.AreaFinderById -
+                ELSE TT
+20:32:52.384 [main] INFO  basenostates.fita2.AreaFinderById -
+                ELSE TT
+20:32:52.399 [main] INFO  basenostates.fita1.WebServer -
+                Server started.
+Listening for connections on port : 8080 ...
+
+20:33:28.457 [Thread-0] INFO  basenostates.fita1.WebServer -
+                sockedthread : GET /get_children?building HTTP/1.1
+20:33:28.459 [Thread-0] INFO  basenostates.fita1.WebServer -
+                input GET /get_children?building HTTP/1.1
+20:33:28.459 [Thread-0] INFO  basenostates.fita1.WebServer -
+                method GET
+20:33:28.459 [Thread-0] INFO  basenostates.fita1.WebServer -
+                resource /get_children?building
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                0 get_children
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                1 building
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                get_children, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                building, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.462 [Thread-0] INFO  basenostates.fita1.WebServer -
+                null, 
+20:33:28.463 [Thread-0] DEBUG basenostates.fita1.WebServer -
+                Tokens: [Ljava.lang.String;@13c5e8fb
+20:33:28.463 [Thread-0] DEBUG basenostates.fita1.WebServer -
+                Request: RequestChildren{areaId=building}
+20:33:28.463 [Thread-0] DEBUG basenostates.fita1.WebServer -
+                created request get_children RequestChildren{areaId=building}
+20:33:28.463 [Thread-0] INFO  basenostates.fita2.AreaFinderById -
+                ELSE TT
+20:33:28.467 [Thread-0] INFO  b.requests.RequestChildren -
+                Area: Partition{, id='building', Areas contained=[Partition{, id='basement', Areas contained=[Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]}, Partition{, id='ground_floor', Areas contained=[Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]}, Partition{, id='floor1', Areas contained=[Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]}
+20:33:28.474 [Thread-0] DEBUG basenostates.fita1.WebServer -
+                processed request get_children RequestChildren{areaId=building}
+20:33:28.475 [Thread-0] DEBUG basenostates.fita1.WebServer -
+                answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{"areas":[{"id":"basement","class":"partition"},{"id":"ground_floor","class":"partition"},{"id":"floor1","class":"partition"},{"access_doors":[],"id":"exterior","class":"space"},{"access_doors":[],"id":"stairs","class":"space"}],"id":"building","class":"partition"}
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                sockedthread : GET /get_children?basement HTTP/1.1
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                input GET /get_children?basement HTTP/1.1
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                method GET
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                resource /get_children?basement
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                0 get_children
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                1 basement
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                get_children, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                basement, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] INFO  basenostates.fita1.WebServer -
+                null, 
+20:35:29.625 [Thread-1] DEBUG basenostates.fita1.WebServer -
+                Tokens: [Ljava.lang.String;@6920d79
+20:35:29.625 [Thread-1] DEBUG basenostates.fita1.WebServer -
+                Request: RequestChildren{areaId=basement}
+20:35:29.625 [Thread-1] DEBUG basenostates.fita1.WebServer -
+                created request get_children RequestChildren{areaId=basement}
+20:35:29.625 [Thread-1] INFO  basenostates.fita2.AreaFinderById -
+                ELSE TT
+20:35:29.625 [Thread-1] INFO  b.requests.RequestChildren -
+                Area: Partition{, id='basement', Areas contained=[Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]}
+20:35:29.625 [Thread-1] DEBUG basenostates.fita1.WebServer -
+                processed request get_children RequestChildren{areaId=basement}
+20:35:29.625 [Thread-1] DEBUG basenostates.fita1.WebServer -
+                answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{"areas":[{"access_doors":[{"closed":true,"id":"D1","state":"unlocked"},{"closed":true,"id":"D2","state":"unlocked"}],"id":"parking","class":"space"}],"id":"basement","class":"partition"}
+20:37:43.669 [Thread-2] INFO  basenostates.fita1.WebServer -
+                sockedthread : GET /get_children?ROOT HTTP/1.1
+20:37:43.675 [Thread-2] INFO  basenostates.fita1.WebServer -
+                input GET /get_children?ROOT HTTP/1.1
+20:37:43.675 [Thread-2] INFO  basenostates.fita1.WebServer -
+                method GET
+20:37:43.675 [Thread-2] INFO  basenostates.fita1.WebServer -
+                resource /get_children?ROOT
+20:37:43.676 [Thread-2] INFO  basenostates.fita1.WebServer -
+                0 get_children
+20:37:43.676 [Thread-2] INFO  basenostates.fita1.WebServer -
+                1 ROOT
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                get_children, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                ROOT, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] INFO  basenostates.fita1.WebServer -
+                null, 
+20:37:43.677 [Thread-2] DEBUG basenostates.fita1.WebServer -
+                Tokens: [Ljava.lang.String;@732af29c
+20:37:43.677 [Thread-2] DEBUG basenostates.fita1.WebServer -
+                Request: RequestChildren{areaId=ROOT}
+20:37:43.677 [Thread-2] DEBUG basenostates.fita1.WebServer -
+                created request get_children RequestChildren{areaId=ROOT}
+20:37:43.678 [Thread-2] INFO  basenostates.fita2.AreaFinderById -
+                ROOT IF
+20:37:43.679 [Thread-2] INFO  b.requests.RequestChildren -
+                Area: Partition{, id='building', Areas contained=[Partition{, id='basement', Areas contained=[Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]}, Partition{, id='ground_floor', Areas contained=[Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]}, Partition{, id='floor1', Areas contained=[Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]}
+20:37:43.679 [Thread-2] DEBUG basenostates.fita1.WebServer -
+                processed request get_children RequestChildren{areaId=ROOT}
+20:37:43.680 [Thread-2] DEBUG basenostates.fita1.WebServer -
+                answer
+HTTP/1.0 200 OK
+Content-type: application/json
+Access-Control-Allow-Origin: *
+
+{"areas":[{"id":"basement","class":"partition"},{"id":"ground_floor","class":"partition"},{"id":"floor1","class":"partition"},{"access_doors":[],"id":"exterior","class":"space"},{"access_doors":[],"id":"stairs","class":"space"}],"id":"building","class":"partition"}
