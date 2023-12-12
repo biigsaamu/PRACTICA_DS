@@ -1,0 +1,156 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+
+class User {
+- name : String
+- credential : String
++ User(name: String, credential: String)
++ toString() : String
+}
+
+User --> "*" Area : areas
+
+class Main {
++ {static} main(args : String)
+}
+class Webserver {
+- {static} PORT :int
+- {static} FORMATTER : DateTimeFormatter
++ Webserver()
+}
+
+class SocketThread {
+- insocked : Socked
+- makeRequest(tokens : String[]) : Request
+- makeRequestReader(tokens : String[]) : RequestReader
+- makeRequestArea(tokens : String[]) : RequestArea
+- makeHeaderAnswer() : String
+- makeJsonAnswer(request : Request) : String
++ run()
+}
+
+Webserver +-right- SocketThread
+
+note right of SocketThread
+inner class
+of Webserver
+end note
+/'
+class DirectoryAreas {
+- {static} allDoors : Door[]
++ {static} makeDoors()
++ {static} findDoorById(id : String) : Door
++ {static} getAllDoors() : Door[]
+}
+
+DirectoryAreas --> "*" Door : "allDoors"
+'/
+
+class DirectoryUsers {
+- {static} users : User[]
++ {static} makeUsers()
++ {static} findUserByCredential(credential : String) : User
+}
+
+DirectoryUsers --> "*" User : "users"
+
+
+class DirectoryAreas{
+- allDoors : Door[]
++ makeAreas()
++ findAreaById(id : String) : Area
++ findDoorById(id : String) : Door
++ getAllDoors() : Door[]
+}
+
+DirectoryAreas --> Area : rootArea
+
+abstract class Area {
+# id : String
+# description : String
+# father : Partition
++ {abstract} getId() : String
++ {abstract} acceptVisitor(visitor : Visitor) : void
+}
+
+class Partition extends Area{
++ Partition(id : String, description : String, father : Partition)
++ addChildrenArea(area : Area)
++ getAreas() : Area[]
++ getId() : String
++ acceptVisitor(visitor : Visitor) : void
+}
+
+Partition o--> "*" Area : areas
+
+class Space extends Area{
++ Space(id : String, description : String, father : Partition)
++ addDoorGivingAccess(door : Door)
++ getDoorsGivingAccess() : Door[]
++ getId() : String
++ acceptVisitor(visitor : Visitor) : void
+}
+
+Space *--> "1..*" Door : doors
+
+class Door {
+- id : String
+- closed : boolean
+- doorState : DoorState
+- from : Space
+- to : Space
++ Door(id : String, Space from, Space to)
++ processRequest(request : RequestReader)
++ setState(doorState : DoorState)
++ toJson() : JSONObject
+'+ toString() : String
+'+ isClosed() :boolean
+'+ setClosed(b : boolean)
+'+ getStateName() : String
++ setState(ds: DoorState)
+- doAction(action : String)
+
+}
+
+Door --> Space : to
+Door --> Space : from
+
+abstract class DoorState{
+# name : String
++ {abstract} getName()
++ {abstract} open()
++ {abstract} close()
++ {abstract} lock()
++ {abstract} unlock()
+}
+
+class Locked extends DoorState{
++ getName()
++ open()
++ close()
++ lock()
++ unlock()
+}
+
+class Unlocked extends DoorState{
++ getName()
++ open()
++ close()
++ lock()
++ unlock()
+}
+
+note right of Main::main
+DirectoryAreas.makeDoors()
+DirectoryUsers.makeUsers()
+new Webserver()
+end note
+
+Main -[hidden]down- Webserver
+Webserver -[hidden]down- DirectoryAreas
+DirectoryAreas -[hidden]right- DirectoryUsers
+Door --> "1" DoorState : state
+DoorState --> "1" Door : door
+
+@enduml
