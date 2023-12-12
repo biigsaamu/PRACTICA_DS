@@ -2,8 +2,10 @@ package basenostates.fita1;
 
 import basenostates.fita2.Visitor;
 import java.util.ArrayList;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 
 public abstract class Area {
@@ -31,6 +33,8 @@ public abstract class Area {
     }
 
   }
+
+  public abstract JSONObject toJson(int depth);
 
   public abstract String getId();
 

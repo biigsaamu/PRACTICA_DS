@@ -2,6 +2,7 @@ package basenostates.fita1;
 
 import basenostates.fita2.Visitor;
 import java.util.ArrayList;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,6 +45,23 @@ public class Partition extends Area {
         + ", Areas contained=" + areas
         //+ "father" + father
         + "}";
+  }
+
+  //Method required to make Flutter part
+  public JSONObject toJson(int depth) {
+    // for depth=1 only the root and children,
+    // for recusive = all levels use Integer.MAX_VALUE
+    JSONObject json = new JSONObject();
+    json.put("class", "partition");
+    json.put("id", id);
+    JSONArray jsonAreas = new JSONArray();
+    if (depth > 0) {
+      for (Area a : areas) {
+        jsonAreas.put(a.toJson(depth - 1));
+      }
+      json.put("areas", jsonAreas);
+    }
+    return json;
   }
 
   public JSONObject toJson() {

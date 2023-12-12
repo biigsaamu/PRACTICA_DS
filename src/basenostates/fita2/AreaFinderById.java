@@ -1,6 +1,7 @@
 package basenostates.fita2;
 
 import basenostates.fita1.Area;
+import basenostates.fita1.DirectoryAreas;
 import basenostates.fita1.Partition;
 import basenostates.fita1.Space;
 import basenostates.fita2.Visitor;
@@ -22,9 +23,16 @@ public class AreaFinderById implements Visitor {
   static final Logger logger = LoggerFactory.getLogger("basenostates.fita2.AreaFinderById");
 
   public AreaFinderById(String id) {
-    this.id = id;
-    this.foundArea = false;
-    this.area = null;
+    if (id.equals("ROOT")) {
+      Area rootArea = DirectoryAreas.getInstance().getRootArea();
+      this.id = rootArea.getId();
+      this.foundArea = true;
+      this.area = rootArea;
+    } else {
+      this.id = id;
+      this.foundArea = false;
+      this.area = null;
+    }
   }
 
   public String getId() {
@@ -51,6 +59,7 @@ public class AreaFinderById implements Visitor {
   }
 
   public void visitPartition(Partition partition) {
+    assert this.area == null;
     //Recursive function that calls this class or Space "findAreaById" method.
     //Asserts if the id is among the areas of the ACU
     String name = partition.getId();

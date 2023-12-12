@@ -2,7 +2,7 @@ package basenostates.fita1;
 
 import basenostates.fita2.Visitor;
 import java.util.ArrayList;
-//import basenostates.fita2.Visitor;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,6 +51,19 @@ public class Space extends Area {
         + ", doors giving access=" + doorsGivingAccess
         //+ ", belongs to Partition=" + father
         + "}";
+  }
+
+  //Method required to make Flutter part
+  public JSONObject toJson(int depth) { // depth not used here
+    JSONObject json = new JSONObject();
+    json.put("class", "space");
+    json.put("id", id);
+    JSONArray jsonDoors = new JSONArray();
+    for (Door d : doorsGivingAccess) {
+      jsonDoors.put(d.toJson());
+    }
+    json.put("access_doors", jsonDoors);
+    return json;
   }
 
   public JSONObject toJson() {

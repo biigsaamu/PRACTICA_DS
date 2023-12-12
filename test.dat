@@ -1,240 +1,102 @@
-22:11:28.896 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area ground_floor, Space parking?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area floor1, Space parking?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area floor1, Space hall?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area floor1, Space room1?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area floor1, Space room2?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space parking?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space hall?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space room1?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space room2?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space room3?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space corridor?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space it?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area exterior, Space exterior?
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space parking?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space hall?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space room1?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space room2?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space room3?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space corridor?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space it?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space exterior?
-22:11:28.901 [main] WARN  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:28.901 [main] INFO  basenostates.fita2.AreaFinderById -
+18:59:44.368 [main] INFO  basenostates.fita2.AreaFinderById -
                 [S] Is area stairs, Space stairs?
-22:11:56.080 [Thread-1] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area ground_floor, Space parking?
-22:11:56.083 [Thread-1] WARN  basenostates.fita2.AreaFinderById -
+19:00:07.077 [Thread-2] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area parking, Space parking?
+19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space parking?
+19:00:15.708 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:11:56.097 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.106 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:11:56.121 [Thread-1] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaFinderById -
-                [S] Is area ground_floor, Space parking?
-22:12:01.535 [Thread-2] WARN  basenostates.fita2.AreaFinderById -
+19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space hall?
+19:00:15.708 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
                 [S] No it isn't :(
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=locked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.535 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=locked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=locked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:01.539 [Thread-2] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=locked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:05.420 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:05.420 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:12:05.423 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:05.423 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
-22:12:05.423 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of basement: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}]
-22:12:05.423 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of ground_floor: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}]
-22:12:05.423 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of floor1: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}]
-22:12:05.423 [Thread-3] INFO  basenostates.fita2.AreaSpacesFinder -
-                [P] Spaces of building: [Space{, id='parking', doors giving access=[Door{, id='D1', closed=true, state=unlocked}, Door{, id='D2', closed=true, state=unlocked}]}, Space{, id='hall', doors giving access=[Door{, id='D3', closed=true, state=unlocked}, Door{, id='D4', closed=true, state=unlocked}]}, Space{, id='room1', doors giving access=[Door{, id='D5', closed=true, state=unlocked}]}, Space{, id='room2', doors giving access=[Door{, id='D6', closed=true, state=unlocked}]}, Space{, id='room3', doors giving access=[Door{, id='D8', closed=true, state=unlocked}]}, Space{, id='corridor', doors giving access=[Door{, id='D7', closed=true, state=unlocked}]}, Space{, id='it', doors giving access=[Door{, id='D9', closed=true, state=unlocked}]}, Space{, id='exterior', doors giving access=[]}, Space{, id='stairs', doors giving access=[]}]
+19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space room1?
+19:00:15.708 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
+19:00:15.708 [Thread-3] INFO  basenostates.fita2.AreaFinderById -
+                [S] Is area floor1, Space room2?
+19:00:15.709 [Thread-3] WARN  basenostates.fita2.AreaFinderById -
+                [S] No it isn't :(
